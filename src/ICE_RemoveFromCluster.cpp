@@ -111,8 +111,6 @@ SICALLBACK MOM_RemoveFromCluster_Evaluate( ICENodeContext& in_ctxt )
    if(gSimulation == NULL)
       return CStatus::OK;
 
-   Application().LogMessage(L"RemoveFromCluster NOde start");
-
 	switch( out_portID )
 	{
 		case ID_OUT_base:
@@ -132,7 +130,6 @@ SICALLBACK MOM_RemoveFromCluster_Evaluate( ICENodeContext& in_ctxt )
             btRigidBodyReference * bodyRef = gSimulation->GetRigidBody(rbd_ID);
             if(bodyRef != NULL)
             {
-               Application().LogMessage(L"Removing from cluster "+CValue((LONG)rbd_ID.primary).GetAsText()+L","+CValue((LONG)rbd_ID.primary).GetAsText());
                bodyRef->RemoveFromCluster();
             }
             outData[it] = rbd_ID.primary;
@@ -140,8 +137,6 @@ SICALLBACK MOM_RemoveFromCluster_Evaluate( ICENodeContext& in_ctxt )
          break;
 		}
 	};
-
-   Application().LogMessage(L"RemoveFromCluster NOde end");
 
 	return CStatus::OK;
 }

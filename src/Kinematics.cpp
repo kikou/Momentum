@@ -371,8 +371,6 @@ XSIPLUGINCALLBACK CStatus MomentumKinematics_Update( CRef& in_ctxt )
 
    OperatorContext ctxt( in_ctxt );
 
-   Application().LogMessage(L"Kinematics Start");
-
    // access the input kinematic state
    KinematicState kine = (CRef)ctxt.GetInputValue(0);
    CTransformation xf = kine.GetTransform();
@@ -734,8 +732,6 @@ XSIPLUGINCALLBACK CStatus MomentumKinematics_Update( CRef& in_ctxt )
       KinematicState outKine = (CRef)ctxt.GetOutputTarget();
       outKine.PutTransform(xf);
    }
-
-   Application().LogMessage(L"Kinematics End");
 
    return CStatus::OK;
 }

@@ -230,8 +230,6 @@ XSIPLUGINCALLBACK CStatus MomentumDeform_Update( CRef& in_ctxt )
 
    OperatorContext ctxt( in_ctxt );
 
-   Application().LogMessage(L"Deform Start");
-
    // query some of the parameters
    // we do that here so we don't have to it in the loop several times
    float margin = ctxt.GetParameterValue(L"margin");
@@ -270,13 +268,9 @@ XSIPLUGINCALLBACK CStatus MomentumDeform_Update( CRef& in_ctxt )
       // first, let's clear the userdata
       p->Clear();
 
-      Application().LogMessage(L"Deform 1");
-
       // now let's remove all collision shapes and all rigidbodies of this primary index
       gSimulation->DeleteAllCollisionShapes(p->shape);
       gSimulation->DeleteAllRigidBodies(p->rbd);
-
-      Application().LogMessage(L"Deform 2");
 
       // create an array to mark which
       LONG pointsLeft = points.GetCount();
@@ -359,8 +353,6 @@ XSIPLUGINCALLBACK CStatus MomentumDeform_Update( CRef& in_ctxt )
          for(int j=0;j<p->nbPerIsland[i];j++)
             p->islands[i][j] = islandIndices[offset++];
       }
-
-      Application().LogMessage(L"Deform 3");
 
       // now we have to construct the collision shapes
       LONG nbCreated = 0;
@@ -587,8 +579,6 @@ XSIPLUGINCALLBACK CStatus MomentumDeform_Update( CRef& in_ctxt )
          }
       }
 
-      Application().LogMessage(L"Deform 4");
-
       if(!plotted)
          Application().LogMessage(L"[MOMENTUM] Created "+CValue(nbCreated).GetAsText()+L" collisionshapes for dbID "+CValue((LONG)p->shape.primary).GetAsText(),siVerboseMsg);
    }
@@ -788,8 +778,6 @@ XSIPLUGINCALLBACK CStatus MomentumDeform_Init( CRef& in_ctxt )
       Application().LogMessage(L"[MOMENTUM] Created a new simulation world.",siVerboseMsg);
    }
 
-   Application().LogMessage(L"Deform End");
-
    return CStatus::OK;
 }
 
@@ -938,6 +926,7 @@ XSIPLUGINCALLBACK CStatus MomentumCopyID_Update( CRef& in_ctxt )
    ProjectItem inItem(ctxt.GetInputValue(0));
    ICENode passThrough(ctxt.GetOutputTarget());
    passThrough.PutParameterValue(L"in",(LONG)inItem.GetObjectID());
+
    return CStatus::OK;
 }
 

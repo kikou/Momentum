@@ -114,8 +114,6 @@ SICALLBACK MOM_AddToCluster_Evaluate( ICENodeContext& in_ctxt )
    if(gSimulation == NULL)
       return CStatus::OK;
 
-   Application().LogMessage(L"AddtoCluster NOde start");
-
 	switch( out_portID )
 	{
 		case ID_OUT_base:
@@ -140,7 +138,6 @@ SICALLBACK MOM_AddToCluster_Evaluate( ICENodeContext& in_ctxt )
 
             if(bodyRef != NULL && clusterRef != NULL)
             {
-               Application().LogMessage(L"Adding to cluster "+CValue((LONG)rbd_ID.primary).GetAsText()+L","+CValue((LONG)rbd_ID.primary).GetAsText());
                bodyRef->AddToCluster(clusterRef);
             }
             outData[it] = rbd_ID.primary;
@@ -148,8 +145,6 @@ SICALLBACK MOM_AddToCluster_Evaluate( ICENodeContext& in_ctxt )
          break;
 		}
 	};
-
-   Application().LogMessage(L"AddtoCluster NOde end");
 
 	return CStatus::OK;
 }

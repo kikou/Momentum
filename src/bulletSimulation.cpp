@@ -51,25 +51,15 @@ bulletSimulation * gSimulation=NULL;
 
 bulletSimulation::bulletSimulation()
 {
-	///collision configuration contains default setup for memory, collision setup
-	mCollisionConfiguration = new btDefaultCollisionConfiguration();
-
-	///use the default collision dispatcher. For parallel processing you can use a diffent dispatcher (see Extras/BulletMultiThreaded)
-	mDispatcher = new btCollisionDispatcher(mCollisionConfiguration);
-
-	mBroadphase = new btDbvtBroadphase();
-
-	///the default constraint solver. For parallel processing you can use a different solver (see Extras/BulletMultiThreaded)
-	btSequentialImpulseConstraintSolver* sol = new btSequentialImpulseConstraintSolver;
-	mSolver = sol;
-
-	mDynamicsWorld = new btDiscreteDynamicsWorld(mDispatcher,mBroadphase,mSolver,mCollisionConfiguration);
-
-	// create the GIMpact collision algorithm
-	btGImpactCollisionAlgorithm::registerAlgorithm(mDispatcher);
 	mChangingFrame = false;
 	mLastFrame = 0;
 	mFps = 25.0f;
+
+	mCollisionConfiguration = NULL;
+	mDispatcher = NULL;
+	mBroadphase = NULL;
+	mSolver = NULL;
+	mDynamicsWorld = NULL;
 
 	ResetWorld();
 }
@@ -105,12 +95,34 @@ void bulletSimulation::ClearWorld()
    DeleteAllRigidBodies();
    mRigidBodies.clear();
 
+   // remove all rbds
+   DeleteAllCollisionShapes();
+   mCollisionShapes.clear();
+
    XSI::Application().LogMessage(L"[MOMENTUM] All rigid bodies and constraints deleted.",XSI::siVerboseMsg);
 
-   ///reset some internal cached data in the broadphase
+   // check if we need to clean up the world first
+   if(mDynamicsWorld != NULL)
+   {
+      delete mDynamicsWorld;
+      delete mSolver;
+      delete mBroadphase;
+      delete mDispatcher;
+      delete mCollisionConfiguration;
+   }
+
+   // recreate all bullet objects!
+	mCollisionConfiguration = new btDefaultCollisionConfiguration();
+	mDispatcher = new btCollisionDispatcher(mCollisionConfiguration);
+	mBroadphase = new btDbvtBroadphase();
+	btSequentialImpulseConstraintSolver* sol = new btSequentialImpulseConstraintSolver;
+	mSolver = sol;
+	mDynamicsWorld = new btDiscreteDynamicsWorld(mDispatcher,mBroadphase,mSolver,mCollisionConfiguration);
+
+	// create the GIMpact collision algorithm
+	btGImpactCollisionAlgorithm::registerAlgorithm(mDispatcher);
    mDynamicsWorld->getBroadphase()->resetPool(mDynamicsWorld->getDispatcher());
    mDynamicsWorld->getConstraintSolver()->reset();
-   mDynamicsWorld->synchronizeMotionStates();
 }
 
 void bulletSimulation::ResetWorld()
@@ -171,8 +183,10 @@ bool bulletSimulation::SetFrame(int in_Frame)
    }
 
    // now let's skip if we already have that frame or the interval>5 - we don't want bullet to compute the whole sequence if you move to the last frame.
-   if(mLastFrame == in_Frame || (in_Frame-mLastFrame)>5)
+   if(mLastFrame >= in_Frame || (in_Frame-mLastFrame)>5)
+   {
       return false;
+   }
 
    mChangingFrame = true;
 
@@ -221,9 +235,6 @@ bool bulletSimulation::SetFrame(int in_Frame)
          }
       }
    }
-
-   // synchronize if we have any passive ones
-   mDynamicsWorld->synchronizeMotionStates();
 
    // step to the given frame
    if(in_Frame > 0)
@@ -665,13 +676,9 @@ void btRigidBodyReference::RemoveFromCluster()
    if(cluster == NULL)
       return;
 
-   XSI::Application().LogMessage(L"Removing 1");
-
    // let calculate my global offset
    btTransform clusterTransform = cluster->GetWorldTransform(false);
    btTransform worldTransform = clusterTransform * clusterOffset;
-
-   XSI::Application().LogMessage(L"Removing 2");
 
    // copy the velocities from the cluster
    body->setLinearVelocity(cluster->body->getLinearVelocity());
@@ -681,12 +688,8 @@ void btRigidBodyReference::RemoveFromCluster()
    btCompoundShape * compound = (btCompoundShape *)cluster->body->getCollisionShape();
    compound->removeChildShape(body->getCollisionShape());
 
-   XSI::Application().LogMessage(L"Removing 3");
-
    // remove ourselves from the children vector
    cluster->children.remove(this);
-
-   XSI::Application().LogMessage(L"Removing 4");
 
    // get the local bounding box
    btVector3 minBox,maxBox,center;
@@ -694,8 +697,6 @@ void btRigidBodyReference::RemoveFromCluster()
    identity.setIdentity();
    compound->getAabb(identity,minBox,maxBox);
    center = (minBox + maxBox) * 0.5f;
-
-   XSI::Application().LogMessage(L"Removing 5");
 
    // now since we have the center, substract the center from all
    // child transforms!
@@ -707,13 +708,9 @@ void btRigidBodyReference::RemoveFromCluster()
       cluster->children[i]->clusterOffset = childTransform;
    }
 
-   XSI::Application().LogMessage(L"Removing 6");
-
    center = clusterTransform(center);
    clusterTransform.setOrigin(center);
    cluster->SetWorldTransform(clusterTransform,true);
-
-   XSI::Application().LogMessage(L"Removing 7");
 
    // if there are no children left!
    if(compound->getNumChildShapes()==1)
@@ -732,8 +729,6 @@ void btRigidBodyReference::RemoveFromCluster()
       cluster->SetWorldTransform(clusterTransform,true);
    }
 
-   XSI::Application().LogMessage(L"Removing 8");
-
    // now update the mass!
    cluster->mass = cluster->mass - mass;
    btVector3 inertia(0,0,0);
@@ -741,8 +736,6 @@ void btRigidBodyReference::RemoveFromCluster()
       cluster->body->getCollisionShape()->calculateLocalInertia(cluster->mass,inertia);
    cluster->body->setMassProps(cluster->mass,inertia);
    cluster->body->updateInertiaTensor();
-
-   XSI::Application().LogMessage(L"Removing 9");
 
    // remove the cluster from my reference
    cluster = NULL;
@@ -759,8 +752,6 @@ void btRigidBodyReference::RemoveFromCluster()
       body->getCollisionShape()->calculateLocalInertia(mass,inertia);
    body->setMassProps(mass,inertia);
    body->updateInertiaTensor();
-
-   XSI::Application().LogMessage(L"Removing End");
 }
 
 btTransform btRigidBodyReference::GetWorldTransform(bool bRecurseToCluster)
