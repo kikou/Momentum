@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_layout_file>
+	<ActiveTarget name="opt" />
+	<File name="Deform.cpp" open="1" top="1" tabpos="2">
+		<Cursor position="13369" topLine="347" />
+	</File>
+	<File name="ICE_AddToCluster.cpp" open="0" top="0" tabpos="1">
+		<Cursor position="3065" topLine="92" />
+	</File>
+	<File name="ICE_AddToCluster.h" open="0" top="0" tabpos="0">
+		<Cursor position="62" topLine="0" />
+	</File>
+	<File name="ICE_ApplyImpulse.cpp" open="0" top="0" tabpos="5">
+		<Cursor position="5020" topLine="112" />
+	</File>
+	<File name="ICE_ApplyImpulse.h" open="0" top="0" tabpos="0">
+		<Cursor position="101" topLine="0" />
+	</File>
+	<File name="ICE_CreateRigidBodies.cpp" open="0" top="0" tabpos="3">
+		<Cursor position="19712" topLine="417" />
+	</File>
+	<File name="ICE_CreateRigidBodies.h" open="0" top="0" tabpos="9">
+		<Cursor position="163" topLine="0" />
+	</File>
+	<File name="ICE_GetAllVelocities.cpp" open="0" top="0" tabpos="7">
+		<Cursor position="1979" topLine="47" />
+	</File>
+	<File name="ICE_GetAllVelocities.h" open="0" top="0" tabpos="0">
+		<Cursor position="113" topLine="0" />
+	</File>
+	<File name="ICE_GetAttributes.cpp" open="0" top="0" tabpos="5">
+		<Cursor position="7210" topLine="176" />
+	</File>
+	<File name="ICE_GetAttributes.h" open="0" top="0" tabpos="0">
+		<Cursor position="104" topLine="0" />
+	</File>
+	<File name="ICE_GetContactPoints.cpp" open="0" top="0" tabpos="2">
+		<Cursor position="3358" topLine="81" />
+	</File>
+	<File name="ICE_GetNbBodies.cpp" open="0" top="0" tabpos="0">
+		<Cursor position="2628" topLine="71" />
+	</File>
+	<File name="ICE_GetNbBodies.h" open="0" top="0" tabpos="0">
+		<Cursor position="77" topLine="0" />
+	</File>
+	<File name="ICE_GetRigidBodyXF.cpp" open="0" top="0" tabpos="1">
+		<Cursor position="3675" topLine="93" />
+	</File>
+	<File name="ICE_GetRigidBodyXF.h" open="0" top="0" tabpos="0">
+		<Cursor position="80" topLine="0" />
+	</File>
+	<File name="ICE_RemoveFromCluster.cpp" open="0" top="0" tabpos="0">
+		<Cursor position="1283" topLine="28" />
+	</File>
+	<File name="ICE_RemoveFromCluster.h" open="0" top="0" tabpos="0">
+		<Cursor position="119" topLine="0" />
+	</File>
+	<File name="ICE_SetAttributes.cpp" open="0" top="0" tabpos="2">
+		<Cursor position="13703" topLine="248" />
+	</File>
+	<File name="ICE_SetAttributes.h" open="0" top="0" tabpos="0">
+		<Cursor position="47" topLine="0" />
+	</File>
+	<File name="Kinematics.cpp" open="1" top="0" tabpos="3">
+		<Cursor position="12933" topLine="357" />
+	</File>
+	<File name="Modifier.cpp" open="0" top="0" tabpos="1">
+		<Cursor position="7255" topLine="214" />
+	</File>
+	<File name="Momentum.cpp" open="0" top="0" tabpos="3">
+		<Cursor position="1524" topLine="42" />
+	</File>
+	<File name="Momentum.h" open="0" top="0" tabpos="1">
+		<Cursor position="250" topLine="0" />
+	</File>
+	<File name="Plotting.cpp" open="1" top="0" tabpos="1">
+		<Cursor position="5770" topLine="149" />
+	</File>
+	<File name="Plotting.h" open="0" top="0" tabpos="0">
+		<Cursor position="945" topLine="66" />
+	</File>
+	<File name="Surface.cpp" open="0" top="0" tabpos="0">
+		<Cursor position="10076" topLine="276" />
+	</File>
+	<File name="bulletSimulation.cpp" open="0" top="0" tabpos="2">
+		<Cursor position="6723" topLine="107" />
+	</File>
+	<File name="bulletSimulation.h" open="0" top="0" tabpos="10">
+		<Cursor position="3307" topLine="129" />
+	</File>
+	<File name="consBallSocket.cpp" open="0" top="0" tabpos="0">
+		<Cursor position="7560" topLine="241" />
+	</File>
+	<File name="consHinge.cpp" open="0" top="0" tabpos="0">
+		<Cursor position="7449" topLine="196" />
+	</File>
+	<File name="consSlider.cpp" open="0" top="0" tabpos="0">
+		<Cursor position="8808" topLine="198" />
+	</File>
+	<File name="consSpring.cpp" open="0" top="0" tabpos="0">
+		<Cursor position="7223" topLine="198" />
+	</File>
+</CodeBlocks_layout_file>

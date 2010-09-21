@@ -1,0 +1,1785 @@
+# depslib dependency file v1.0
+1285068619 source:/opensource/nest_workgroup/Addons/nest_momentum/Application/Plugins/src/Deform.cpp
+	<xsi_application.h>
+	<xsi_context.h>
+	<xsi_pluginregistrar.h>
+	<xsi_status.h>
+	<xsi_customoperator.h>
+	<xsi_operatorcontext.h>
+	<xsi_ppglayout.h>
+	<xsi_ppgeventcontext.h>
+	<xsi_selection.h>
+	<xsi_command.h>
+	<xsi_factory.h>
+	<xsi_primitive.h>
+	<xsi_kinematics.h>
+	<xsi_outputport.h>
+	<xsi_polygonmesh.h>
+	<xsi_x3dobject.h>
+	<xsi_iceattribute.h>
+	<xsi_command.h>
+	<xsi_math.h>
+	<xsi_uitoolkit.h>
+	<xsi_progressbar.h>
+	<xsi_geometryaccessor.h>
+	<xsi_triangle.h>
+	<xsi_vertex.h>
+	<xsi_edge.h>
+	<xsi_polygonface.h>
+	<xsi_null.h>
+	<xsi_model.h>
+	<xsi_icenode.h>
+	<vector>
+	"Momentum.h"
+	"Plotting.h"
+	"bulletSimulation.h"
+	<btBulletDynamicsCommon.h>
+	<BulletCollision/Gimpact/btGImpactShape.h>
+	<BulletCollision/CollisionShapes/btShapeHull.h>
+
+1284557243 /opensource/include/Softimage_2010_SP1/include/xsi_application.h
+	<xsi_siobject.h>
+	<xsi_value.h>
+	<xsi_status.h>
+
+1284557243 /opensource/include/Softimage_2010_SP1/include/xsi_siobject.h
+	<xsi_base.h>
+
+1284557243 /opensource/include/Softimage_2010_SP1/include/xsi_base.h
+	"sicppsdk.h"
+	"xsi_decl.h"
+	"xsi_ref.h"
+	"xsi_status.h"
+	"xsi_string.h"
+
+1284557243 /opensource/include/Softimage_2010_SP1/include/sicppsdk.h
+	<values.h>
+	<FLOAT.H>
+	<assert.h>
+	<limits.h>
+
+1284557243 /opensource/include/Softimage_2010_SP1/include/xsi_decl.h
+	<stdlib.h>
+
+1284557243 /opensource/include/Softimage_2010_SP1/include/xsi_ref.h
+	"sicppsdk.h"
+	"xsi_string.h"
+	"xsi_decl.h"
+
+1284557243 /opensource/include/Softimage_2010_SP1/include/xsi_string.h
+	"sicppsdk.h"
+	<stdlib.h>
+
+1284557243 /opensource/include/Softimage_2010_SP1/include/xsi_status.h
+	"sicppsdk.h"
+	"xsi_string.h"
+
+1284557243 /opensource/include/Softimage_2010_SP1/include/xsi_value.h
+	"sicppsdk.h"
+	"xsi_ref.h"
+
+1284557243 /opensource/include/Softimage_2010_SP1/include/xsi_context.h
+	<xsi_base.h>
+	<xsi_value.h>
+
+1284557243 /opensource/include/Softimage_2010_SP1/include/xsi_pluginregistrar.h
+	<xsi_siobject.h>
+	<xsi_pluginitem.h>
+	<xsi_application.h>
+	<xsi_context.h>
+	<xsi_pluginregistrar.h>
+	<xsi_status.h>
+	<xsi_customproperty.h>
+	<xsi_ppglayout.h>
+	<xsi_ppgeventcontext.h>
+	<xsi_selection.h>
+
+1284557243 /opensource/include/Softimage_2010_SP1/include/xsi_pluginitem.h
+	<xsi_siobject.h>
+
+1284557243 /opensource/include/Softimage_2010_SP1/include/xsi_customproperty.h
+	<xsi_property.h>
+	<xsi_status.h>
+
+1284557243 /opensource/include/Softimage_2010_SP1/include/xsi_property.h
+	<xsi_projectitem.h>
+	<xsi_status.h>
+
+1284557243 /opensource/include/Softimage_2010_SP1/include/xsi_projectitem.h
+	<xsi_siobject.h>
+	<xsi_value.h>
+	<xsi_parameter.h>
+
+1284557243 /opensource/include/Softimage_2010_SP1/include/xsi_parameter.h
+	<xsi_siobject.h>
+	<xsi_value.h>
+	<xsi_status.h>
+
+1284557243 /opensource/include/Softimage_2010_SP1/include/xsi_ppglayout.h
+	<xsi_base.h>
+	<xsi_ppgitem.h>
+	<xsi_value.h>
+
+1284557243 /opensource/include/Softimage_2010_SP1/include/xsi_ppgitem.h
+	<xsi_base.h>
+	<xsi_value.h>
+
+1284557243 /opensource/include/Softimage_2010_SP1/include/xsi_ppgeventcontext.h
+	<xsi_base.h>
+	<xsi_value.h>
+	<xsi_context.h>
+
+1284557243 /opensource/include/Softimage_2010_SP1/include/xsi_selection.h
+	<xsi_base.h>
+
+1284557243 /opensource/include/Softimage_2010_SP1/include/xsi_customoperator.h
+	<xsi_operator.h>
+
+1284557243 /opensource/include/Softimage_2010_SP1/include/xsi_operator.h
+	<xsi_projectitem.h>
+
+1284557243 /opensource/include/Softimage_2010_SP1/include/xsi_operatorcontext.h
+	<xsi_base.h>
+	<xsi_value.h>
+	<xsi_time.h>
+	<xsi_context.h>
+
+1284557243 /opensource/include/Softimage_2010_SP1/include/xsi_time.h
+	"sicppsdk.h"
+	"xsi_string.h"
+
+1284557243 /opensource/include/Softimage_2010_SP1/include/xsi_command.h
+	<xsi_siobject.h>
+	<xsi_value.h>
+	<xsi_application.h>
+	<xsi_argument.h>
+	<xsi_command.h>
+	<xsi_context.h>
+	<xsi_pluginregistrar.h>
+	<xsi_status.h>
+	<xsi_x3dobject.h>
+	<xsi_model.h>
+
+1284557243 /opensource/include/Softimage_2010_SP1/include/xsi_argument.h
+	<xsi_siobject.h>
+	<xsi_value.h>
+
+1284557243 /opensource/include/Softimage_2010_SP1/include/xsi_x3dobject.h
+	<xsi_sceneitem.h>
+	<xsi_status.h>
+	<xsi_math.h>
+	<xsi_nurbsdata.h>
+	<xsi_application.h>
+	<xsi_model.h>
+	<xsi_x3dobject.h>
+	<xsi_application.h>
+	<xsi_model.h>
+	<xsi_x3dobject.h>
+
+1284557243 /opensource/include/Softimage_2010_SP1/include/xsi_sceneitem.h
+	<xsi_projectitem.h>
+	<xsi_customproperty.h>
+	<xsi_status.h>
+
+1284557243 /opensource/include/Softimage_2010_SP1/include/xsi_math.h
+	"sicppsdk.h"
+	"xsi_vector3.h"
+	"xsi_vector4.h"
+	"xsi_matrix3.h"
+	"xsi_matrix4.h"
+	"xsi_transformation.h"
+	"xsi_quaternion.h"
+	"xsi_rotation.h"
+
+1284557243 /opensource/include/Softimage_2010_SP1/include/xsi_vector3.h
+	"sicppsdk.h"
+	"xsi_status.h"
+	"xsi_matrix3.h"
+	"xsi_matrix4.h"
+	<math.h>
+
+1284557243 /opensource/include/Softimage_2010_SP1/include/xsi_matrix3.h
+	"sicppsdk.h"
+
+1284557243 /opensource/include/Softimage_2010_SP1/include/xsi_matrix4.h
+	"sicppsdk.h"
+
+1284557243 /opensource/include/Softimage_2010_SP1/include/xsi_vector4.h
+	"sicppsdk.h"
+	"xsi_status.h"
+	"xsi_matrix4.h"
+	"xsi_transformation.h"
+
+1284557243 /opensource/include/Softimage_2010_SP1/include/xsi_transformation.h
+	"sicppsdk.h"
+	"xsi_rotation.h"
+
+1284557243 /opensource/include/Softimage_2010_SP1/include/xsi_rotation.h
+	"sicppsdk.h"
+
+1284557243 /opensource/include/Softimage_2010_SP1/include/xsi_quaternion.h
+	"sicppsdk.h"
+	"xsi_rotation.h"
+	"xsi_vector3.h"
+	"xsi_vector4.h"
+
+1284557243 /opensource/include/Softimage_2010_SP1/include/xsi_nurbsdata.h
+	<xsi_decl.h>
+	<xsi_vector4.h>
+	<xsi_doublearray.h>
+	<xsi_longarray.h>
+
+1284557243 /opensource/include/Softimage_2010_SP1/include/xsi_doublearray.h
+	"sicppsdk.h"
+
+1284557243 /opensource/include/Softimage_2010_SP1/include/xsi_longarray.h
+	"sicppsdk.h"
+
+1284557243 /opensource/include/Softimage_2010_SP1/include/xsi_model.h
+	<xsi_x3dobject.h>
+
+1284557243 /opensource/include/Softimage_2010_SP1/include/xsi_factory.h
+	"sicppsdk.h"
+	<xsi_siobject.h>
+	"xsi_status.h"
+	"xsi_value.h"
+
+1284557243 /opensource/include/Softimage_2010_SP1/include/xsi_primitive.h
+	<xsi_projectitem.h>
+
+1284557243 /opensource/include/Softimage_2010_SP1/include/xsi_kinematics.h
+	<xsi_property.h>
+	<xsi_vector3.h>
+	<xsi_kinematicstate.h>
+
+1284557243 /opensource/include/Softimage_2010_SP1/include/xsi_kinematicstate.h
+	<xsi_parameter.h>
+	<xsi_transformation.h>
+
+1284557243 /opensource/include/Softimage_2010_SP1/include/xsi_outputport.h
+	<xsi_port.h>
+
+1284557243 /opensource/include/Softimage_2010_SP1/include/xsi_port.h
+	<xsi_siobject.h>
+
+1284557243 /opensource/include/Softimage_2010_SP1/include/xsi_polygonmesh.h
+	<xsi_geometry.h>
+	<xsi_clusterproperty.h>
+	<xsi_pointlocatordata.h>
+
+1284557243 /opensource/include/Softimage_2010_SP1/include/xsi_geometry.h
+	<xsi_siobject.h>
+	<xsi_math.h>
+	<xsi_longarray.h>
+	<xsi_doublearray.h>
+	<xsi_cluster.h>
+	<xsi_clusterproperty.h>
+	<xsi_pointlocatordata.h>
+	<xsi_vector3.h>
+	<xsi_application.h>
+	<xsi_context.h>
+	<xsi_pluginregistrar.h>
+	<xsi_status.h>
+	<xsi_customoperator.h>
+	<xsi_operatorcontext.h>
+	<xsi_ppglayout.h>
+	<xsi_ppgeventcontext.h>
+	<xsi_selection.h>
+	<xsi_point.h>
+	<xsi_primitive.h>
+	<xsi_command.h>
+	<xsi_factory.h>
+	<xsi_geometry.h>
+	<xsi_model.h>
+	<xsi_x3dobject.h>
+	<xsi_kinematics.h>
+	<xsi_outputport.h>
+	<xsi_transformation.h>
+
+1284557243 /opensource/include/Softimage_2010_SP1/include/xsi_cluster.h
+	<xsi_sceneitem.h>
+	<xsi_status.h>
+	<xsi_longarray.h>
+
+1284557243 /opensource/include/Softimage_2010_SP1/include/xsi_clusterproperty.h
+	<xsi_property.h>
+	<xsi_status.h>
+	<xsi_doublearray.h>
+	<xsi_longarray.h>
+	<xsi_bitarray.h>
+	<xsi_floatarray.h>
+
+1284557243 /opensource/include/Softimage_2010_SP1/include/xsi_bitarray.h
+	"sicppsdk.h"
+
+1284557243 /opensource/include/Softimage_2010_SP1/include/xsi_floatarray.h
+	"sicppsdk.h"
+
+1284557243 /opensource/include/Softimage_2010_SP1/include/xsi_pointlocatordata.h
+	<xsi_base.h>
+	<xsi_ppgitem.h>
+	<xsi_value.h>
+
+1284557243 /opensource/include/Softimage_2010_SP1/include/xsi_point.h
+	<xsi_siobject.h>
+	<xsi_math.h>
+	<xsi_longarray.h>
+
+1284557243 /opensource/include/Softimage_2010_SP1/include/xsi_iceattribute.h
+	<xsi_siobject.h>
+
+1284557243 /opensource/include/Softimage_2010_SP1/include/xsi_uitoolkit.h
+	<xsi_base.h>
+	<xsi_value.h>
+	<xsi_status.h>
+
+1284557243 /opensource/include/Softimage_2010_SP1/include/xsi_progressbar.h
+	<xsi_base.h>
+	<xsi_value.h>
+	<xsi_status.h>
+
+1284557243 /opensource/include/Softimage_2010_SP1/include/xsi_geometryaccessor.h
+	<xsi_siobject.h>
+	<xsi_value.h>
+	<xsi_status.h>
+	<xsi_transformation.h>
+
+1284557243 /opensource/include/Softimage_2010_SP1/include/xsi_triangle.h
+	<xsi_siobject.h>
+	<xsi_math.h>
+	<xsi_vertexcolor.h>
+	<xsi_uv.h>
+	<xsi_longarray.h>
+
+1284557243 /opensource/include/Softimage_2010_SP1/include/xsi_vertexcolor.h
+	"sicppsdk.h"
+	"xsi_status.h"
+
+1284557243 /opensource/include/Softimage_2010_SP1/include/xsi_uv.h
+	"sicppsdk.h"
+	"xsi_status.h"
+
+1284557243 /opensource/include/Softimage_2010_SP1/include/xsi_vertex.h
+	<xsi_point.h>
+
+1284557243 /opensource/include/Softimage_2010_SP1/include/xsi_edge.h
+	<xsi_segment.h>
+
+1284557243 /opensource/include/Softimage_2010_SP1/include/xsi_segment.h
+	<xsi_siobject.h>
+	<xsi_math.h>
+	<xsi_longarray.h>
+
+1284557243 /opensource/include/Softimage_2010_SP1/include/xsi_polygonface.h
+	<xsi_facet.h>
+	<xsi_longarray.h>
+	<xsi_pointlocatordata.h>
+
+1284557243 /opensource/include/Softimage_2010_SP1/include/xsi_facet.h
+	<xsi_siobject.h>
+	<xsi_math.h>
+	<xsi_longarray.h>
+
+1284557243 /opensource/include/Softimage_2010_SP1/include/xsi_null.h
+	<xsi_x3dobject.h>
+
+1285065656 /opensource/nest_workgroup/Addons/nest_momentum/Application/Plugins/src/Momentum.h
+	"bulletSimulation.h"
+	<btBulletDynamicsCommon.h>
+	<BulletCollision/Gimpact/btGImpactShape.h>
+	<BulletCollision/CollisionShapes/btShapeHull.h>
+	<vector>
+
+1285065634 /opensource/nest_workgroup/Addons/nest_momentum/Application/Plugins/src/bulletSimulation.h
+	<btBulletDynamicsCommon.h>
+	<map>
+	<xsi_ref.h>
+	<vector>
+
+1284557234 /opensource/include/bullet-2.76/src/btBulletDynamicsCommon.h
+	"btBulletCollisionCommon.h"
+	"BulletDynamics/Dynamics/btDiscreteDynamicsWorld.h"
+	"BulletDynamics/Dynamics/btContinuousDynamicsWorld.h"
+	"BulletDynamics/Dynamics/btSimpleDynamicsWorld.h"
+	"BulletDynamics/Dynamics/btRigidBody.h"
+	"BulletDynamics/ConstraintSolver/btPoint2PointConstraint.h"
+	"BulletDynamics/ConstraintSolver/btHingeConstraint.h"
+	"BulletDynamics/ConstraintSolver/btConeTwistConstraint.h"
+	"BulletDynamics/ConstraintSolver/btGeneric6DofConstraint.h"
+	"BulletDynamics/ConstraintSolver/btSliderConstraint.h"
+	"BulletDynamics/ConstraintSolver/btGeneric6DofSpringConstraint.h"
+	"BulletDynamics/ConstraintSolver/btUniversalConstraint.h"
+	"BulletDynamics/ConstraintSolver/btHinge2Constraint.h"
+	"BulletDynamics/ConstraintSolver/btSequentialImpulseConstraintSolver.h"
+	"BulletDynamics/Vehicle/btRaycastVehicle.h"
+
+1284557234 /opensource/include/bullet-2.76/src/btBulletCollisionCommon.h
+	"BulletCollision/CollisionDispatch/btCollisionWorld.h"
+	"BulletCollision/CollisionDispatch/btCollisionObject.h"
+	"BulletCollision/CollisionShapes/btBoxShape.h"
+	"BulletCollision/CollisionShapes/btSphereShape.h"
+	"BulletCollision/CollisionShapes/btCapsuleShape.h"
+	"BulletCollision/CollisionShapes/btCylinderShape.h"
+	"BulletCollision/CollisionShapes/btConeShape.h"
+	"BulletCollision/CollisionShapes/btStaticPlaneShape.h"
+	"BulletCollision/CollisionShapes/btConvexHullShape.h"
+	"BulletCollision/CollisionShapes/btTriangleMesh.h"
+	"BulletCollision/CollisionShapes/btConvexTriangleMeshShape.h"
+	"BulletCollision/CollisionShapes/btBvhTriangleMeshShape.h"
+	"BulletCollision/CollisionShapes/btTriangleMeshShape.h"
+	"BulletCollision/CollisionShapes/btTriangleIndexVertexArray.h"
+	"BulletCollision/CollisionShapes/btCompoundShape.h"
+	"BulletCollision/CollisionShapes/btTetrahedronShape.h"
+	"BulletCollision/CollisionShapes/btEmptyShape.h"
+	"BulletCollision/CollisionShapes/btMultiSphereShape.h"
+	"BulletCollision/CollisionShapes/btUniformScalingShape.h"
+	"BulletCollision/CollisionDispatch/btSphereSphereCollisionAlgorithm.h"
+	"BulletCollision/CollisionDispatch/btDefaultCollisionConfiguration.h"
+	"BulletCollision/CollisionDispatch/btCollisionDispatcher.h"
+	"BulletCollision/BroadphaseCollision/btSimpleBroadphase.h"
+	"BulletCollision/BroadphaseCollision/btAxisSweep3.h"
+	"BulletCollision/BroadphaseCollision/btMultiSapBroadphase.h"
+	"BulletCollision/BroadphaseCollision/btDbvtBroadphase.h"
+	"LinearMath/btQuaternion.h"
+	"LinearMath/btTransform.h"
+	"LinearMath/btDefaultMotionState.h"
+	"LinearMath/btQuickprof.h"
+	"LinearMath/btIDebugDraw.h"
+	"LinearMath/btSerializer.h"
+
+1284557234 /opensource/include/bullet-2.76/src/BulletCollision/CollisionDispatch/btCollisionWorld.h
+	"LinearMath/btVector3.h"
+	"LinearMath/btTransform.h"
+	"btCollisionObject.h"
+	"btCollisionDispatcher.h"
+	"BulletCollision/BroadphaseCollision/btOverlappingPairCache.h"
+	"LinearMath/btAlignedObjectArray.h"
+
+1284557233 /opensource/include/bullet-2.76/src/LinearMath/btVector3.h
+	"btScalar.h"
+	"btMinMax.h"
+
+1284557233 /opensource/include/bullet-2.76/src/LinearMath/btScalar.h
+	<math.h>
+	<stdlib.h>
+	<cstdlib>
+	<cfloat>
+	<float.h>
+	<ppcintrinsics.h>
+	<emmintrin.h>
+	<assert.h>
+	<assert.h>
+	<assert.h>
+	<emmintrin.h>
+	<assert.h>
+	<assert.h>
+
+1284557233 /opensource/include/bullet-2.76/src/LinearMath/btMinMax.h
+
+1284557233 /opensource/include/bullet-2.76/src/LinearMath/btTransform.h
+	"btMatrix3x3.h"
+
+1284557233 /opensource/include/bullet-2.76/src/LinearMath/btMatrix3x3.h
+	"btVector3.h"
+	"btQuaternion.h"
+
+1284557233 /opensource/include/bullet-2.76/src/LinearMath/btQuaternion.h
+	"btVector3.h"
+	"btQuadWord.h"
+
+1284557233 /opensource/include/bullet-2.76/src/LinearMath/btQuadWord.h
+	"btScalar.h"
+	"btMinMax.h"
+	<altivec.h>
+
+1284557234 /opensource/include/bullet-2.76/src/BulletCollision/CollisionDispatch/btCollisionObject.h
+	"LinearMath/btTransform.h"
+	"LinearMath/btMotionState.h"
+	"LinearMath/btAlignedAllocator.h"
+	"LinearMath/btAlignedObjectArray.h"
+
+1284557233 /opensource/include/bullet-2.76/src/LinearMath/btMotionState.h
+	"btTransform.h"
+
+1284557233 /opensource/include/bullet-2.76/src/LinearMath/btAlignedAllocator.h
+	"btScalar.h"
+
+1284557233 /opensource/include/bullet-2.76/src/LinearMath/btAlignedObjectArray.h
+	"btScalar.h"
+	"btAlignedAllocator.h"
+	<memory.h>
+	<string.h>
+	<new>
+
+1284557234 /opensource/include/bullet-2.76/src/BulletCollision/CollisionDispatch/btCollisionDispatcher.h
+	"BulletCollision/BroadphaseCollision/btDispatcher.h"
+	"BulletCollision/NarrowPhaseCollision/btPersistentManifold.h"
+	"BulletCollision/CollisionDispatch/btManifoldResult.h"
+	"BulletCollision/BroadphaseCollision/btBroadphaseProxy.h"
+	"LinearMath/btAlignedObjectArray.h"
+	"btCollisionCreateFunc.h"
+
+1284557234 /opensource/include/bullet-2.76/src/BulletCollision/BroadphaseCollision/btDispatcher.h
+	"LinearMath/btScalar.h"
+
+1284557234 /opensource/include/bullet-2.76/src/BulletCollision/NarrowPhaseCollision/btPersistentManifold.h
+	"LinearMath/btVector3.h"
+	"LinearMath/btTransform.h"
+	"btManifoldPoint.h"
+	"LinearMath/btAlignedAllocator.h"
+
+1284557234 /opensource/include/bullet-2.76/src/BulletCollision/NarrowPhaseCollision/btManifoldPoint.h
+	"LinearMath/btVector3.h"
+	"LinearMath/btTransformUtil.h"
+
+1284557233 /opensource/include/bullet-2.76/src/LinearMath/btTransformUtil.h
+	"btTransform.h"
+
+1284557234 /opensource/include/bullet-2.76/src/BulletCollision/CollisionDispatch/btManifoldResult.h
+	"BulletCollision/NarrowPhaseCollision/btPersistentManifold.h"
+	"BulletCollision/NarrowPhaseCollision/btDiscreteCollisionDetectorInterface.h"
+	"LinearMath/btTransform.h"
+
+1284557234 /opensource/include/bullet-2.76/src/BulletCollision/NarrowPhaseCollision/btDiscreteCollisionDetectorInterface.h
+	"LinearMath/btTransform.h"
+	"LinearMath/btVector3.h"
+
+1284557234 /opensource/include/bullet-2.76/src/BulletCollision/BroadphaseCollision/btBroadphaseProxy.h
+	"LinearMath/btScalar.h"
+	"LinearMath/btVector3.h"
+	"LinearMath/btAlignedAllocator.h"
+
+1284557234 /opensource/include/bullet-2.76/src/BulletCollision/CollisionDispatch/btCollisionCreateFunc.h
+	"LinearMath/btAlignedObjectArray.h"
+
+1284557234 /opensource/include/bullet-2.76/src/BulletCollision/BroadphaseCollision/btOverlappingPairCache.h
+	"btBroadphaseInterface.h"
+	"btBroadphaseProxy.h"
+	"btOverlappingPairCallback.h"
+	"LinearMath/btAlignedObjectArray.h"
+
+1284557234 /opensource/include/bullet-2.76/src/BulletCollision/BroadphaseCollision/btBroadphaseInterface.h
+	"btBroadphaseProxy.h"
+	"LinearMath/btVector3.h"
+
+1284557234 /opensource/include/bullet-2.76/src/BulletCollision/BroadphaseCollision/btOverlappingPairCallback.h
+
+1284557234 /opensource/include/bullet-2.76/src/BulletCollision/CollisionShapes/btBoxShape.h
+	"btPolyhedralConvexShape.h"
+	"btCollisionMargin.h"
+	"BulletCollision/BroadphaseCollision/btBroadphaseProxy.h"
+	"LinearMath/btVector3.h"
+	"LinearMath/btMinMax.h"
+
+1284557234 /opensource/include/bullet-2.76/src/BulletCollision/CollisionShapes/btPolyhedralConvexShape.h
+	"LinearMath/btMatrix3x3.h"
+	"btConvexInternalShape.h"
+
+1284557234 /opensource/include/bullet-2.76/src/BulletCollision/CollisionShapes/btConvexInternalShape.h
+	"btConvexShape.h"
+	"LinearMath/btAabbUtil2.h"
+
+1284557234 /opensource/include/bullet-2.76/src/BulletCollision/CollisionShapes/btConvexShape.h
+	"btCollisionShape.h"
+	"LinearMath/btVector3.h"
+	"LinearMath/btTransform.h"
+	"LinearMath/btMatrix3x3.h"
+	"btCollisionMargin.h"
+	"LinearMath/btAlignedAllocator.h"
+
+1284557234 /opensource/include/bullet-2.76/src/BulletCollision/CollisionShapes/btCollisionShape.h
+	"LinearMath/btTransform.h"
+	"LinearMath/btVector3.h"
+	"LinearMath/btMatrix3x3.h"
+	"BulletCollision/BroadphaseCollision/btBroadphaseProxy.h"
+
+1284557234 /opensource/include/bullet-2.76/src/BulletCollision/CollisionShapes/btCollisionMargin.h
+
+1284557233 /opensource/include/bullet-2.76/src/LinearMath/btAabbUtil2.h
+	"btTransform.h"
+	"btVector3.h"
+	"btMinMax.h"
+
+1284557234 /opensource/include/bullet-2.76/src/BulletCollision/CollisionShapes/btSphereShape.h
+	"btConvexInternalShape.h"
+	"BulletCollision/BroadphaseCollision/btBroadphaseProxy.h"
+
+1284557234 /opensource/include/bullet-2.76/src/BulletCollision/CollisionShapes/btCapsuleShape.h
+	"btConvexInternalShape.h"
+	"BulletCollision/BroadphaseCollision/btBroadphaseProxy.h"
+
+1284557234 /opensource/include/bullet-2.76/src/BulletCollision/CollisionShapes/btCylinderShape.h
+	"btBoxShape.h"
+	"BulletCollision/BroadphaseCollision/btBroadphaseProxy.h"
+	"LinearMath/btVector3.h"
+
+1284557234 /opensource/include/bullet-2.76/src/BulletCollision/CollisionShapes/btConeShape.h
+	"btConvexInternalShape.h"
+	"BulletCollision/BroadphaseCollision/btBroadphaseProxy.h"
+
+1284557234 /opensource/include/bullet-2.76/src/BulletCollision/CollisionShapes/btStaticPlaneShape.h
+	"btConcaveShape.h"
+
+1284557234 /opensource/include/bullet-2.76/src/BulletCollision/CollisionShapes/btConcaveShape.h
+	"btCollisionShape.h"
+	"BulletCollision/BroadphaseCollision/btBroadphaseProxy.h"
+	"btTriangleCallback.h"
+
+1284557234 /opensource/include/bullet-2.76/src/BulletCollision/CollisionShapes/btTriangleCallback.h
+	"LinearMath/btVector3.h"
+
+1284557234 /opensource/include/bullet-2.76/src/BulletCollision/CollisionShapes/btConvexHullShape.h
+	"btPolyhedralConvexShape.h"
+	"BulletCollision/BroadphaseCollision/btBroadphaseProxy.h"
+	"LinearMath/btAlignedObjectArray.h"
+
+1284557234 /opensource/include/bullet-2.76/src/BulletCollision/CollisionShapes/btTriangleMesh.h
+	"btTriangleIndexVertexArray.h"
+	"LinearMath/btVector3.h"
+	"LinearMath/btAlignedObjectArray.h"
+
+1284557234 /opensource/include/bullet-2.76/src/BulletCollision/CollisionShapes/btTriangleIndexVertexArray.h
+	"btStridingMeshInterface.h"
+	"LinearMath/btAlignedObjectArray.h"
+	"LinearMath/btScalar.h"
+
+1284557234 /opensource/include/bullet-2.76/src/BulletCollision/CollisionShapes/btStridingMeshInterface.h
+	"LinearMath/btVector3.h"
+	"btTriangleCallback.h"
+	"btConcaveShape.h"
+
+1284557234 /opensource/include/bullet-2.76/src/BulletCollision/CollisionShapes/btConvexTriangleMeshShape.h
+	"btPolyhedralConvexShape.h"
+	"BulletCollision/BroadphaseCollision/btBroadphaseProxy.h"
+
+1284557234 /opensource/include/bullet-2.76/src/BulletCollision/CollisionShapes/btBvhTriangleMeshShape.h
+	"btTriangleMeshShape.h"
+	"btOptimizedBvh.h"
+	"LinearMath/btAlignedAllocator.h"
+	"btTriangleInfoMap.h"
+
+1284557234 /opensource/include/bullet-2.76/src/BulletCollision/CollisionShapes/btTriangleMeshShape.h
+	"btConcaveShape.h"
+	"btStridingMeshInterface.h"
+
+1284557234 /opensource/include/bullet-2.76/src/BulletCollision/CollisionShapes/btOptimizedBvh.h
+	"BulletCollision/BroadphaseCollision/btQuantizedBvh.h"
+
+1284557234 /opensource/include/bullet-2.76/src/BulletCollision/BroadphaseCollision/btQuantizedBvh.h
+	<stdio.h>
+	<stdlib.h>
+	"LinearMath/btVector3.h"
+	"LinearMath/btAlignedAllocator.h"
+	"LinearMath/btAlignedAllocator.h"
+	"LinearMath/btAlignedObjectArray.h"
+
+1284557234 /opensource/include/bullet-2.76/src/BulletCollision/CollisionShapes/btTriangleInfoMap.h
+	"LinearMath/btHashMap.h"
+	"LinearMath/btSerializer.h"
+
+1284557233 /opensource/include/bullet-2.76/src/LinearMath/btHashMap.h
+	"btAlignedObjectArray.h"
+
+1284557233 /opensource/include/bullet-2.76/src/LinearMath/btSerializer.h
+	"btScalar.h"
+	"btStackAlloc.h"
+	"btHashMap.h"
+	<memory.h>
+	<string.h>
+
+1284557233 /opensource/include/bullet-2.76/src/LinearMath/btStackAlloc.h
+	"btScalar.h"
+	"btAlignedAllocator.h"
+
+1284557234 /opensource/include/bullet-2.76/src/BulletCollision/CollisionShapes/btCompoundShape.h
+	"btCollisionShape.h"
+	"LinearMath/btVector3.h"
+	"LinearMath/btTransform.h"
+	"LinearMath/btMatrix3x3.h"
+	"btCollisionMargin.h"
+	"LinearMath/btAlignedObjectArray.h"
+
+1284557234 /opensource/include/bullet-2.76/src/BulletCollision/CollisionShapes/btTetrahedronShape.h
+	"btPolyhedralConvexShape.h"
+	"BulletCollision/BroadphaseCollision/btBroadphaseProxy.h"
+
+1284557234 /opensource/include/bullet-2.76/src/BulletCollision/CollisionShapes/btEmptyShape.h
+	"btConcaveShape.h"
+	"LinearMath/btVector3.h"
+	"LinearMath/btTransform.h"
+	"LinearMath/btMatrix3x3.h"
+	"btCollisionMargin.h"
+
+1284557234 /opensource/include/bullet-2.76/src/BulletCollision/CollisionShapes/btMultiSphereShape.h
+	"btConvexInternalShape.h"
+	"BulletCollision/BroadphaseCollision/btBroadphaseProxy.h"
+	"LinearMath/btAlignedObjectArray.h"
+	"LinearMath/btAabbUtil2.h"
+
+1284557234 /opensource/include/bullet-2.76/src/BulletCollision/CollisionShapes/btUniformScalingShape.h
+	"btConvexShape.h"
+	"BulletCollision/BroadphaseCollision/btBroadphaseProxy.h"
+
+1284557234 /opensource/include/bullet-2.76/src/BulletCollision/CollisionDispatch/btSphereSphereCollisionAlgorithm.h
+	"btActivatingCollisionAlgorithm.h"
+	"BulletCollision/BroadphaseCollision/btBroadphaseProxy.h"
+	"BulletCollision/CollisionDispatch/btCollisionCreateFunc.h"
+	"btCollisionDispatcher.h"
+
+1284557234 /opensource/include/bullet-2.76/src/BulletCollision/CollisionDispatch/btActivatingCollisionAlgorithm.h
+	"BulletCollision/BroadphaseCollision/btCollisionAlgorithm.h"
+
+1284557234 /opensource/include/bullet-2.76/src/BulletCollision/BroadphaseCollision/btCollisionAlgorithm.h
+	"LinearMath/btScalar.h"
+	"LinearMath/btAlignedObjectArray.h"
+
+1284557234 /opensource/include/bullet-2.76/src/BulletCollision/CollisionDispatch/btDefaultCollisionConfiguration.h
+	"btCollisionConfiguration.h"
+
+1284557234 /opensource/include/bullet-2.76/src/BulletCollision/CollisionDispatch/btCollisionConfiguration.h
+
+1284557234 /opensource/include/bullet-2.76/src/BulletCollision/BroadphaseCollision/btSimpleBroadphase.h
+	"btOverlappingPairCache.h"
+
+1284557234 /opensource/include/bullet-2.76/src/BulletCollision/BroadphaseCollision/btAxisSweep3.h
+	"LinearMath/btVector3.h"
+	"btOverlappingPairCache.h"
+	"btBroadphaseInterface.h"
+	"btBroadphaseProxy.h"
+	"btOverlappingPairCallback.h"
+	"btDbvtBroadphase.h"
+	<stdio.h>
+
+1284557234 /opensource/include/bullet-2.76/src/BulletCollision/BroadphaseCollision/btDbvtBroadphase.h
+	"BulletCollision/BroadphaseCollision/btDbvt.h"
+	"BulletCollision/BroadphaseCollision/btOverlappingPairCache.h"
+	"LinearMath/btQuickprof.h"
+
+1284557234 /opensource/include/bullet-2.76/src/BulletCollision/BroadphaseCollision/btDbvt.h
+	"LinearMath/btAlignedObjectArray.h"
+	"LinearMath/btVector3.h"
+	"LinearMath/btTransform.h"
+	"LinearMath/btAabbUtil2.h"
+	<emmintrin.h>
+	<memory.h>
+	<string.h>
+
+1284557233 /opensource/include/bullet-2.76/src/LinearMath/btQuickprof.h
+	"btScalar.h"
+	"btAlignedAllocator.h"
+	<new>
+	<sys/sys_time.h>
+	<sys/time_util.h>
+	<stdio.h>
+	<stdio.h>
+	<Xtl.h>
+	<windows.h>
+	<time.h>
+	<sys/time.h>
+
+1284557234 /opensource/include/bullet-2.76/src/BulletCollision/BroadphaseCollision/btMultiSapBroadphase.h
+	"btBroadphaseInterface.h"
+	"LinearMath/btAlignedObjectArray.h"
+	"btOverlappingPairCache.h"
+
+1284557233 /opensource/include/bullet-2.76/src/LinearMath/btDefaultMotionState.h
+	"btMotionState.h"
+
+1284557233 /opensource/include/bullet-2.76/src/LinearMath/btIDebugDraw.h
+	"btVector3.h"
+	"btTransform.h"
+
+1284557233 /opensource/include/bullet-2.76/src/BulletDynamics/Dynamics/btDiscreteDynamicsWorld.h
+	"btDynamicsWorld.h"
+	"LinearMath/btAlignedObjectArray.h"
+
+1284557233 /opensource/include/bullet-2.76/src/BulletDynamics/Dynamics/btDynamicsWorld.h
+	"BulletCollision/CollisionDispatch/btCollisionWorld.h"
+	"BulletDynamics/ConstraintSolver/btContactSolverInfo.h"
+
+1284557233 /opensource/include/bullet-2.76/src/BulletDynamics/ConstraintSolver/btContactSolverInfo.h
+
+1284557233 /opensource/include/bullet-2.76/src/BulletDynamics/Dynamics/btContinuousDynamicsWorld.h
+	"btDiscreteDynamicsWorld.h"
+
+1284557233 /opensource/include/bullet-2.76/src/BulletDynamics/Dynamics/btSimpleDynamicsWorld.h
+	"btDynamicsWorld.h"
+
+1284557233 /opensource/include/bullet-2.76/src/BulletDynamics/Dynamics/btRigidBody.h
+	"LinearMath/btAlignedObjectArray.h"
+	"LinearMath/btTransform.h"
+	"BulletCollision/BroadphaseCollision/btBroadphaseProxy.h"
+	"BulletCollision/CollisionDispatch/btCollisionObject.h"
+
+1284557233 /opensource/include/bullet-2.76/src/BulletDynamics/ConstraintSolver/btPoint2PointConstraint.h
+	"LinearMath/btVector3.h"
+	"btJacobianEntry.h"
+	"btTypedConstraint.h"
+
+1284557233 /opensource/include/bullet-2.76/src/BulletDynamics/ConstraintSolver/btJacobianEntry.h
+	"LinearMath/btVector3.h"
+	"BulletDynamics/Dynamics/btRigidBody.h"
+
+1284557233 /opensource/include/bullet-2.76/src/BulletDynamics/ConstraintSolver/btTypedConstraint.h
+	"LinearMath/btScalar.h"
+	"btSolverConstraint.h"
+	"BulletCollision/NarrowPhaseCollision/btPersistentManifold.h"
+
+1284557233 /opensource/include/bullet-2.76/src/BulletDynamics/ConstraintSolver/btSolverConstraint.h
+	"LinearMath/btVector3.h"
+	"LinearMath/btMatrix3x3.h"
+	"btJacobianEntry.h"
+	"btSolverBody.h"
+
+1284557233 /opensource/include/bullet-2.76/src/BulletDynamics/ConstraintSolver/btSolverBody.h
+	"LinearMath/btVector3.h"
+	"LinearMath/btMatrix3x3.h"
+	"BulletDynamics/Dynamics/btRigidBody.h"
+	"LinearMath/btAlignedAllocator.h"
+	"LinearMath/btTransformUtil.h"
+
+1284557233 /opensource/include/bullet-2.76/src/BulletDynamics/ConstraintSolver/btHingeConstraint.h
+	"LinearMath/btVector3.h"
+	"btJacobianEntry.h"
+	"btTypedConstraint.h"
+
+1284557233 /opensource/include/bullet-2.76/src/BulletDynamics/ConstraintSolver/btConeTwistConstraint.h
+	"LinearMath/btVector3.h"
+	"btJacobianEntry.h"
+	"btTypedConstraint.h"
+
+1284557233 /opensource/include/bullet-2.76/src/BulletDynamics/ConstraintSolver/btGeneric6DofConstraint.h
+	"LinearMath/btVector3.h"
+	"btJacobianEntry.h"
+	"btTypedConstraint.h"
+
+1284557233 /opensource/include/bullet-2.76/src/BulletDynamics/ConstraintSolver/btSliderConstraint.h
+	"LinearMath/btVector3.h"
+	"btJacobianEntry.h"
+	"btTypedConstraint.h"
+
+1284557233 /opensource/include/bullet-2.76/src/BulletDynamics/ConstraintSolver/btGeneric6DofSpringConstraint.h
+	"LinearMath/btVector3.h"
+	"btTypedConstraint.h"
+	"btGeneric6DofConstraint.h"
+
+1284557233 /opensource/include/bullet-2.76/src/BulletDynamics/ConstraintSolver/btUniversalConstraint.h
+	"LinearMath/btVector3.h"
+	"btTypedConstraint.h"
+	"btGeneric6DofConstraint.h"
+
+1284557233 /opensource/include/bullet-2.76/src/BulletDynamics/ConstraintSolver/btHinge2Constraint.h
+	"LinearMath/btVector3.h"
+	"btTypedConstraint.h"
+	"btGeneric6DofSpringConstraint.h"
+
+1284557233 /opensource/include/bullet-2.76/src/BulletDynamics/ConstraintSolver/btSequentialImpulseConstraintSolver.h
+	"btConstraintSolver.h"
+	"btContactConstraint.h"
+	"btSolverBody.h"
+	"btSolverConstraint.h"
+	"btTypedConstraint.h"
+	"BulletCollision/NarrowPhaseCollision/btManifoldPoint.h"
+
+1284557233 /opensource/include/bullet-2.76/src/BulletDynamics/ConstraintSolver/btConstraintSolver.h
+	"LinearMath/btScalar.h"
+
+1284557233 /opensource/include/bullet-2.76/src/BulletDynamics/ConstraintSolver/btContactConstraint.h
+	"LinearMath/btVector3.h"
+	"btJacobianEntry.h"
+	"btTypedConstraint.h"
+	"BulletCollision/NarrowPhaseCollision/btPersistentManifold.h"
+
+1284557233 /opensource/include/bullet-2.76/src/BulletDynamics/Vehicle/btRaycastVehicle.h
+	"BulletDynamics/Dynamics/btRigidBody.h"
+	"BulletDynamics/ConstraintSolver/btTypedConstraint.h"
+	"btVehicleRaycaster.h"
+	"LinearMath/btAlignedObjectArray.h"
+	"btWheelInfo.h"
+	"BulletDynamics/Dynamics/btActionInterface.h"
+
+1284557233 /opensource/include/bullet-2.76/src/BulletDynamics/Vehicle/btVehicleRaycaster.h
+	"LinearMath/btVector3.h"
+
+1284557233 /opensource/include/bullet-2.76/src/BulletDynamics/Vehicle/btWheelInfo.h
+	"LinearMath/btVector3.h"
+	"LinearMath/btTransform.h"
+
+1284557233 /opensource/include/bullet-2.76/src/BulletDynamics/Dynamics/btActionInterface.h
+	"LinearMath/btScalar.h"
+	"btRigidBody.h"
+
+1284557234 /opensource/include/bullet-2.76/src/BulletCollision/Gimpact/btGImpactShape.h
+	"BulletCollision/CollisionShapes/btCollisionShape.h"
+	"BulletCollision/CollisionShapes/btTriangleShape.h"
+	"BulletCollision/CollisionShapes/btStridingMeshInterface.h"
+	"BulletCollision/CollisionShapes/btCollisionMargin.h"
+	"BulletCollision/CollisionDispatch/btCollisionWorld.h"
+	"BulletCollision/CollisionShapes/btConcaveShape.h"
+	"BulletCollision/CollisionShapes/btTetrahedronShape.h"
+	"LinearMath/btVector3.h"
+	"LinearMath/btTransform.h"
+	"LinearMath/btMatrix3x3.h"
+	"LinearMath/btAlignedObjectArray.h"
+	"btGImpactQuantizedBvh.h"
+
+1284557234 /opensource/include/bullet-2.76/src/BulletCollision/CollisionShapes/btTriangleShape.h
+	"btConvexShape.h"
+	"btBoxShape.h"
+
+1284557234 /opensource/include/bullet-2.76/src/BulletCollision/Gimpact/btGImpactQuantizedBvh.h
+	"btGImpactBvh.h"
+	"btQuantization.h"
+
+1284557234 /opensource/include/bullet-2.76/src/BulletCollision/Gimpact/btGImpactBvh.h
+	"LinearMath/btAlignedObjectArray.h"
+	"btBoxCollision.h"
+	"btTriangleShapeEx.h"
+
+1284557234 /opensource/include/bullet-2.76/src/BulletCollision/Gimpact/btBoxCollision.h
+	"LinearMath/btTransform.h"
+
+1284557234 /opensource/include/bullet-2.76/src/BulletCollision/Gimpact/btTriangleShapeEx.h
+	"BulletCollision/CollisionShapes/btCollisionShape.h"
+	"BulletCollision/CollisionShapes/btTriangleShape.h"
+	"btBoxCollision.h"
+	"btClipPolygon.h"
+	"btGeometryOperations.h"
+
+1284557234 /opensource/include/bullet-2.76/src/BulletCollision/Gimpact/btClipPolygon.h
+	"LinearMath/btTransform.h"
+	"LinearMath/btGeometryUtil.h"
+
+1284557233 /opensource/include/bullet-2.76/src/LinearMath/btGeometryUtil.h
+	"btVector3.h"
+	"btAlignedObjectArray.h"
+
+1284557234 /opensource/include/bullet-2.76/src/BulletCollision/Gimpact/btGeometryOperations.h
+	"btBoxCollision.h"
+
+1284557234 /opensource/include/bullet-2.76/src/BulletCollision/Gimpact/btQuantization.h
+	"LinearMath/btTransform.h"
+
+1284557234 /opensource/include/bullet-2.76/src/BulletCollision/CollisionShapes/btShapeHull.h
+	"LinearMath/btAlignedObjectArray.h"
+	"BulletCollision/CollisionShapes/btConvexShape.h"
+
+1285068943 source:/opensource/nest_workgroup/Addons/nest_momentum/Application/Plugins/src/Kinematics.cpp
+	<xsi_application.h>
+	<xsi_context.h>
+	<xsi_pluginregistrar.h>
+	<xsi_status.h>
+	<xsi_customoperator.h>
+	<xsi_operatorcontext.h>
+	<xsi_ppglayout.h>
+	<xsi_ppgeventcontext.h>
+	<xsi_selection.h>
+	<xsi_command.h>
+	<xsi_factory.h>
+	<xsi_primitive.h>
+	<xsi_kinematics.h>
+	<xsi_outputport.h>
+	<xsi_polygonmesh.h>
+	<xsi_x3dobject.h>
+	<xsi_iceattribute.h>
+	<xsi_command.h>
+	<xsi_factory.h>
+	<xsi_math.h>
+	<xsi_uitoolkit.h>
+	<xsi_progressbar.h>
+	<xsi_geometryaccessor.h>
+	<xsi_triangle.h>
+	<xsi_vertex.h>
+	<xsi_edge.h>
+	<xsi_polygonface.h>
+	<xsi_null.h>
+	<xsi_model.h>
+	<vector>
+	"Momentum.h"
+	"Plotting.h"
+	"bulletSimulation.h"
+	<btBulletDynamicsCommon.h>
+	<BulletCollision/Gimpact/btGImpactShape.h>
+	<BulletCollision/CollisionShapes/btShapeHull.h>
+
+1285065712 source:/opensource/nest_workgroup/Addons/nest_momentum/Application/Plugins/src/Modifier.cpp
+	<xsi_application.h>
+	<xsi_context.h>
+	<xsi_pluginregistrar.h>
+	<xsi_status.h>
+	<xsi_customoperator.h>
+	<xsi_operatorcontext.h>
+	<xsi_ppglayout.h>
+	<xsi_ppgeventcontext.h>
+	<xsi_selection.h>
+	<xsi_command.h>
+	<xsi_factory.h>
+	<xsi_primitive.h>
+	<xsi_kinematics.h>
+	<xsi_outputport.h>
+	<xsi_polygonmesh.h>
+	<xsi_x3dobject.h>
+	<xsi_iceattribute.h>
+	<xsi_command.h>
+	<xsi_factory.h>
+	<xsi_math.h>
+	<xsi_uitoolkit.h>
+	<xsi_progressbar.h>
+	<xsi_geometryaccessor.h>
+	<xsi_triangle.h>
+	<xsi_vertex.h>
+	<xsi_edge.h>
+	<xsi_polygonface.h>
+	<xsi_null.h>
+	<xsi_model.h>
+	<vector>
+	"Momentum.h"
+	"bulletSimulation.h"
+
+1285065717 source:/opensource/nest_workgroup/Addons/nest_momentum/Application/Plugins/src/Settings.cpp
+	<xsi_application.h>
+	<xsi_context.h>
+	<xsi_pluginregistrar.h>
+	<xsi_status.h>
+	<xsi_customproperty.h>
+	<xsi_ppglayout.h>
+	<xsi_ppgeventcontext.h>
+	<xsi_selection.h>
+
+1285065719 source:/opensource/nest_workgroup/Addons/nest_momentum/Application/Plugins/src/Surface.cpp
+	<xsi_application.h>
+	<xsi_context.h>
+	<xsi_pluginregistrar.h>
+	<xsi_status.h>
+	<xsi_customoperator.h>
+	<xsi_operatorcontext.h>
+	<xsi_ppglayout.h>
+	<xsi_ppgeventcontext.h>
+	<xsi_selection.h>
+	<xsi_command.h>
+	<xsi_factory.h>
+	<xsi_primitive.h>
+	<xsi_kinematics.h>
+	<xsi_outputport.h>
+	<xsi_polygonmesh.h>
+	<xsi_x3dobject.h>
+	<xsi_iceattribute.h>
+	<xsi_command.h>
+	<xsi_factory.h>
+	<xsi_math.h>
+	<xsi_uitoolkit.h>
+	<xsi_progressbar.h>
+	<xsi_geometryaccessor.h>
+	<xsi_triangle.h>
+	<xsi_vertex.h>
+	<xsi_edge.h>
+	<xsi_polygonface.h>
+	<xsi_null.h>
+	<xsi_model.h>
+	<vector>
+	"Momentum.h"
+	"bulletSimulation.h"
+	<btBulletDynamicsCommon.h>
+	<BulletCollision/Gimpact/btGImpactShape.h>
+	<BulletCollision/CollisionShapes/btShapeHull.h>
+
+1285068188 source:/opensource/nest_workgroup/Addons/nest_momentum/Application/Plugins/src/bulletSimulation.cpp
+	"bulletSimulation.h"
+	<BulletCollision/Gimpact/btGImpactShape.h>
+	"BulletCollision/Gimpact/btGImpactCollisionAlgorithm.h"
+	<xsi_kinematicstate.h>
+	<xsi_transformation.h>
+	<xsi_quaternion.h>
+	<xsi_customoperator.h>
+	<xsi_application.h>
+	<xsi_customproperty.h>
+	<xsi_model.h>
+
+1284557234 /opensource/include/bullet-2.76/src/BulletCollision/Gimpact/btGImpactCollisionAlgorithm.h
+	"BulletCollision/CollisionDispatch/btActivatingCollisionAlgorithm.h"
+	"BulletCollision/BroadphaseCollision/btDispatcher.h"
+	"BulletCollision/BroadphaseCollision/btBroadphaseInterface.h"
+	"BulletCollision/NarrowPhaseCollision/btPersistentManifold.h"
+	"BulletCollision/BroadphaseCollision/btBroadphaseProxy.h"
+	"BulletCollision/CollisionDispatch/btCollisionCreateFunc.h"
+	"BulletCollision/CollisionDispatch/btCollisionDispatcher.h"
+	"LinearMath/btAlignedObjectArray.h"
+	"btGImpactShape.h"
+	"BulletCollision/CollisionShapes/btStaticPlaneShape.h"
+	"BulletCollision/CollisionShapes/btCompoundShape.h"
+	"BulletCollision/CollisionDispatch/btConvexConvexAlgorithm.h"
+	"LinearMath/btIDebugDraw.h"
+
+1284557234 /opensource/include/bullet-2.76/src/BulletCollision/CollisionDispatch/btConvexConvexAlgorithm.h
+	"btActivatingCollisionAlgorithm.h"
+	"BulletCollision/NarrowPhaseCollision/btGjkPairDetector.h"
+	"BulletCollision/NarrowPhaseCollision/btPersistentManifold.h"
+	"BulletCollision/BroadphaseCollision/btBroadphaseProxy.h"
+	"BulletCollision/NarrowPhaseCollision/btVoronoiSimplexSolver.h"
+	"btCollisionCreateFunc.h"
+	"btCollisionDispatcher.h"
+	"LinearMath/btTransformUtil.h"
+
+1284557234 /opensource/include/bullet-2.76/src/BulletCollision/NarrowPhaseCollision/btGjkPairDetector.h
+	"btDiscreteCollisionDetectorInterface.h"
+	"BulletCollision/CollisionShapes/btCollisionMargin.h"
+	"btSimplexSolverInterface.h"
+
+1284557234 /opensource/include/bullet-2.76/src/BulletCollision/NarrowPhaseCollision/btSimplexSolverInterface.h
+	"LinearMath/btVector3.h"
+	"btVoronoiSimplexSolver.h"
+
+1284557234 /opensource/include/bullet-2.76/src/BulletCollision/NarrowPhaseCollision/btVoronoiSimplexSolver.h
+	"btSimplexSolverInterface.h"
+
+1285065690 source:/opensource/nest_workgroup/Addons/nest_momentum/Application/Plugins/src/consBallSocket.cpp
+	<xsi_application.h>
+	<xsi_context.h>
+	<xsi_pluginregistrar.h>
+	<xsi_status.h>
+	<xsi_customoperator.h>
+	<xsi_operatorcontext.h>
+	<xsi_ppglayout.h>
+	<xsi_ppgeventcontext.h>
+	<xsi_selection.h>
+	<xsi_command.h>
+	<xsi_factory.h>
+	<xsi_primitive.h>
+	<xsi_kinematics.h>
+	<xsi_outputport.h>
+	<xsi_polygonmesh.h>
+	<xsi_x3dobject.h>
+	<xsi_iceattribute.h>
+	<xsi_command.h>
+	<xsi_factory.h>
+	<xsi_math.h>
+	<xsi_uitoolkit.h>
+	<xsi_progressbar.h>
+	<xsi_geometryaccessor.h>
+	<xsi_triangle.h>
+	<xsi_vertex.h>
+	<xsi_edge.h>
+	<xsi_polygonface.h>
+	<xsi_null.h>
+	<xsi_model.h>
+	<vector>
+	"Momentum.h"
+	"bulletSimulation.h"
+	<btBulletDynamicsCommon.h>
+	<BulletCollision/Gimpact/btGImpactShape.h>
+	<BulletCollision/CollisionShapes/btShapeHull.h>
+
+1285065691 source:/opensource/nest_workgroup/Addons/nest_momentum/Application/Plugins/src/consHinge.cpp
+	<xsi_application.h>
+	<xsi_context.h>
+	<xsi_pluginregistrar.h>
+	<xsi_status.h>
+	<xsi_customoperator.h>
+	<xsi_operatorcontext.h>
+	<xsi_ppglayout.h>
+	<xsi_ppgeventcontext.h>
+	<xsi_selection.h>
+	<xsi_command.h>
+	<xsi_factory.h>
+	<xsi_primitive.h>
+	<xsi_kinematics.h>
+	<xsi_outputport.h>
+	<xsi_polygonmesh.h>
+	<xsi_x3dobject.h>
+	<xsi_iceattribute.h>
+	<xsi_command.h>
+	<xsi_factory.h>
+	<xsi_math.h>
+	<xsi_uitoolkit.h>
+	<xsi_progressbar.h>
+	<xsi_geometryaccessor.h>
+	<xsi_triangle.h>
+	<xsi_vertex.h>
+	<xsi_edge.h>
+	<xsi_polygonface.h>
+	<xsi_null.h>
+	<xsi_model.h>
+	<vector>
+	"Momentum.h"
+	"bulletSimulation.h"
+	<btBulletDynamicsCommon.h>
+	<BulletCollision/Gimpact/btGImpactShape.h>
+	<BulletCollision/CollisionShapes/btShapeHull.h>
+
+1285065692 source:/opensource/nest_workgroup/Addons/nest_momentum/Application/Plugins/src/consSlider.cpp
+	<xsi_application.h>
+	<xsi_context.h>
+	<xsi_pluginregistrar.h>
+	<xsi_status.h>
+	<xsi_customoperator.h>
+	<xsi_operatorcontext.h>
+	<xsi_ppglayout.h>
+	<xsi_ppgeventcontext.h>
+	<xsi_selection.h>
+	<xsi_command.h>
+	<xsi_factory.h>
+	<xsi_primitive.h>
+	<xsi_kinematics.h>
+	<xsi_outputport.h>
+	<xsi_polygonmesh.h>
+	<xsi_x3dobject.h>
+	<xsi_iceattribute.h>
+	<xsi_command.h>
+	<xsi_factory.h>
+	<xsi_math.h>
+	<xsi_uitoolkit.h>
+	<xsi_progressbar.h>
+	<xsi_geometryaccessor.h>
+	<xsi_triangle.h>
+	<xsi_vertex.h>
+	<xsi_edge.h>
+	<xsi_polygonface.h>
+	<xsi_null.h>
+	<xsi_model.h>
+	<vector>
+	"Momentum.h"
+	"bulletSimulation.h"
+	<btBulletDynamicsCommon.h>
+	<BulletCollision/Gimpact/btGImpactShape.h>
+	<BulletCollision/CollisionShapes/btShapeHull.h>
+
+1285065694 source:/opensource/nest_workgroup/Addons/nest_momentum/Application/Plugins/src/consSpring.cpp
+	<xsi_application.h>
+	<xsi_context.h>
+	<xsi_pluginregistrar.h>
+	<xsi_status.h>
+	<xsi_customoperator.h>
+	<xsi_operatorcontext.h>
+	<xsi_ppglayout.h>
+	<xsi_ppgeventcontext.h>
+	<xsi_selection.h>
+	<xsi_command.h>
+	<xsi_factory.h>
+	<xsi_primitive.h>
+	<xsi_kinematics.h>
+	<xsi_outputport.h>
+	<xsi_polygonmesh.h>
+	<xsi_x3dobject.h>
+	<xsi_iceattribute.h>
+	<xsi_command.h>
+	<xsi_factory.h>
+	<xsi_math.h>
+	<xsi_uitoolkit.h>
+	<xsi_progressbar.h>
+	<xsi_geometryaccessor.h>
+	<xsi_triangle.h>
+	<xsi_vertex.h>
+	<xsi_edge.h>
+	<xsi_polygonface.h>
+	<xsi_null.h>
+	<xsi_model.h>
+	<vector>
+	"Momentum.h"
+	"bulletSimulation.h"
+	<btBulletDynamicsCommon.h>
+	<BulletCollision/Gimpact/btGImpactShape.h>
+	<BulletCollision/CollisionShapes/btShapeHull.h>
+
+1285065715 source:/opensource/nest_workgroup/Addons/nest_momentum/Application/Plugins/src/Momentum.cpp
+	<xsi_application.h>
+	<xsi_context.h>
+	<xsi_pluginregistrar.h>
+	<xsi_status.h>
+	<xsi_customoperator.h>
+	<xsi_operatorcontext.h>
+	<xsi_ppglayout.h>
+	<xsi_ppgeventcontext.h>
+	<xsi_selection.h>
+	<xsi_command.h>
+	<xsi_factory.h>
+	<xsi_primitive.h>
+	<xsi_kinematics.h>
+	<xsi_outputport.h>
+	<xsi_polygonmesh.h>
+	<xsi_x3dobject.h>
+	<xsi_iceattribute.h>
+	<xsi_command.h>
+	<xsi_factory.h>
+	<xsi_math.h>
+	<xsi_uitoolkit.h>
+	<xsi_progressbar.h>
+	<xsi_geometryaccessor.h>
+	<xsi_triangle.h>
+	<xsi_vertex.h>
+	<xsi_edge.h>
+	<xsi_polygonface.h>
+	<xsi_null.h>
+	<xsi_model.h>
+	<vector>
+	"Momentum.h"
+	"bulletSimulation.h"
+	"ICE_GetContactPoints.h"
+	"ICE_GetAllVelocities.h"
+	"ICE_CreateRigidBodies.h"
+	"ICE_GetRigidBodyXF.h"
+	"ICE_ApplyImpulse.h"
+	"ICE_GetAttributes.h"
+	"ICE_SetAttributes.h"
+	"ICE_AddToCluster.h"
+	"ICE_RemoveFromCluster.h"
+	"ICE_GetNbBodies.h"
+
+1285065647 /opensource/nest_workgroup/Addons/nest_momentum/Application/Plugins/src/ICE_GetContactPoints.h
+
+1285065703 source:/opensource/nest_workgroup/Addons/nest_momentum/Application/Plugins/src/ICE_GetContactPoints.cpp
+	<xsi_application.h>
+	<xsi_context.h>
+	<xsi_pluginregistrar.h>
+	<xsi_status.h>
+	<xsi_icenodecontext.h>
+	<xsi_icenodedef.h>
+	<xsi_command.h>
+	<xsi_factory.h>
+	<xsi_longarray.h>
+	<xsi_doublearray.h>
+	<xsi_math.h>
+	<xsi_vector2f.h>
+	<xsi_vector3f.h>
+	<xsi_vector4f.h>
+	<xsi_matrix3f.h>
+	<xsi_matrix4f.h>
+	<xsi_rotationf.h>
+	<xsi_quaternionf.h>
+	<xsi_color4f.h>
+	<xsi_shape.h>
+	<xsi_icegeometry.h>
+	<xsi_iceportstate.h>
+	<xsi_indexset.h>
+	<xsi_dataarray.h>
+	<xsi_dataarray2D.h>
+	"Momentum.h"
+	"bulletSimulation.h"
+	"ICE_GetContactPoints.h"
+
+1284557243 /opensource/include/Softimage_2010_SP1/include/xsi_icenodecontext.h
+	<xsi_context.h>
+	<xsi_time.h>
+	<xsi_longarray.h>
+
+1284557243 /opensource/include/Softimage_2010_SP1/include/xsi_icenodedef.h
+	<xsi_base.h>
+	<xsi_value.h>
+
+1284557243 /opensource/include/Softimage_2010_SP1/include/xsi_vector2f.h
+	"sicppsdk.h"
+	<math.h>
+
+1284557243 /opensource/include/Softimage_2010_SP1/include/xsi_vector3f.h
+	"sicppsdk.h"
+	<math.h>
+	<xsi_matrix3f.h>
+	<xsi_matrix4f.h>
+
+1284557243 /opensource/include/Softimage_2010_SP1/include/xsi_matrix3f.h
+	"sicppsdk.h"
+	"math.h"
+
+1284557243 /opensource/include/Softimage_2010_SP1/include/xsi_matrix4f.h
+	"sicppsdk.h"
+	"math.h"
+
+1284557243 /opensource/include/Softimage_2010_SP1/include/xsi_vector4f.h
+	"sicppsdk.h"
+	"xsi_matrix4f.h"
+
+1284557243 /opensource/include/Softimage_2010_SP1/include/xsi_rotationf.h
+	"sicppsdk.h"
+	"xsi_math.h"
+	"xsi_vector3f.h"
+	"xsi_vector4f.h"
+	"xsi_matrix3f.h"
+	"xsi_quaternionf.h"
+
+1284557243 /opensource/include/Softimage_2010_SP1/include/xsi_quaternionf.h
+	"sicppsdk.h"
+
+1284557243 /opensource/include/Softimage_2010_SP1/include/xsi_color4f.h
+	"sicppsdk.h"
+	<math.h>
+
+1284557243 /opensource/include/Softimage_2010_SP1/include/xsi_shape.h
+	"sicppsdk.h"
+	<xsi_decl.h>
+
+1284557243 /opensource/include/Softimage_2010_SP1/include/xsi_icegeometry.h
+
+1284557243 /opensource/include/Softimage_2010_SP1/include/xsi_iceportstate.h
+
+1284557243 /opensource/include/Softimage_2010_SP1/include/xsi_indexset.h
+	<sicppsdk.h>
+	<xsi_icenodecontext.h>
+
+1284557243 /opensource/include/Softimage_2010_SP1/include/xsi_dataarray.h
+	<sicppsdk.h>
+	<xsi_icenodecontext.h>
+	<xsi_indexset.h>
+	<xsi_vector2f.h>
+	<xsi_vector3f.h>
+	<xsi_vector4f.h>
+	<xsi_quaternionf.h>
+	<xsi_rotationf.h>
+	<xsi_matrix3f.h>
+	<xsi_matrix4f.h>
+	<xsi_color4f.h>
+	<xsi_shape.h>
+
+1284557243 /opensource/include/Softimage_2010_SP1/include/xsi_dataarray2D.h
+	<sicppsdk.h>
+	<xsi_icenodecontext.h>
+	<xsi_indexset.h>
+	<xsi_dataarray.h>
+	<xsi_vector2f.h>
+	<xsi_vector3f.h>
+	<xsi_vector4f.h>
+	<xsi_quaternionf.h>
+	<xsi_rotationf.h>
+	<xsi_matrix3f.h>
+	<xsi_matrix4f.h>
+	<xsi_color4f.h>
+
+1285065701 source:/opensource/nest_workgroup/Addons/nest_momentum/Application/Plugins/src/ICE_GetAllVelocities.cpp
+	<xsi_application.h>
+	<xsi_context.h>
+	<xsi_pluginregistrar.h>
+	<xsi_status.h>
+	<xsi_icenodecontext.h>
+	<xsi_icenodedef.h>
+	<xsi_command.h>
+	<xsi_factory.h>
+	<xsi_longarray.h>
+	<xsi_doublearray.h>
+	<xsi_math.h>
+	<xsi_vector2f.h>
+	<xsi_vector3f.h>
+	<xsi_vector4f.h>
+	<xsi_matrix3f.h>
+	<xsi_matrix4f.h>
+	<xsi_rotationf.h>
+	<xsi_quaternionf.h>
+	<xsi_color4f.h>
+	<xsi_shape.h>
+	<xsi_icegeometry.h>
+	<xsi_iceportstate.h>
+	<xsi_indexset.h>
+	<xsi_dataarray.h>
+	<xsi_dataarray2D.h>
+	"Momentum.h"
+	"bulletSimulation.h"
+	"ICE_GetAllVelocities.h"
+
+1285065643 /opensource/nest_workgroup/Addons/nest_momentum/Application/Plugins/src/ICE_GetAllVelocities.h
+
+1285065641 /opensource/nest_workgroup/Addons/nest_momentum/Application/Plugins/src/ICE_CreateRigidBodies.h
+
+1285065700 source:/opensource/nest_workgroup/Addons/nest_momentum/Application/Plugins/src/ICE_CreateRigidBodies.cpp
+	<xsi_application.h>
+	<xsi_dictionary.h>
+	<xsi_context.h>
+	<xsi_pluginregistrar.h>
+	<xsi_status.h>
+	<xsi_icenodecontext.h>
+	<xsi_icenodedef.h>
+	<xsi_command.h>
+	<xsi_factory.h>
+	<xsi_longarray.h>
+	<xsi_doublearray.h>
+	<xsi_math.h>
+	<xsi_vector2f.h>
+	<xsi_vector3f.h>
+	<xsi_vector4f.h>
+	<xsi_matrix3f.h>
+	<xsi_matrix4f.h>
+	<xsi_rotationf.h>
+	<xsi_quaternionf.h>
+	<xsi_color4f.h>
+	<xsi_shape.h>
+	<xsi_icegeometry.h>
+	<xsi_iceportstate.h>
+	<xsi_indexset.h>
+	<xsi_dataarray.h>
+	<xsi_dataarray2D.h>
+	<xsi_icenode.h>
+	<xsi_x3dobject.h>
+	<xsi_primitive.h>
+	<xsi_polygonmesh.h>
+	<xsi_geometryaccessor.h>
+	<xsi_point.h>
+	"Momentum.h"
+	"bulletSimulation.h"
+	<btBulletDynamicsCommon.h>
+	<BulletCollision/Gimpact/btGImpactShape.h>
+	<BulletCollision/CollisionShapes/btShapeHull.h>
+	"ICE_CreateRigidBodies.h"
+
+1284557243 /opensource/include/Softimage_2010_SP1/include/xsi_icenode.h
+	<xsi_projectitem.h>
+
+1285065650 /opensource/nest_workgroup/Addons/nest_momentum/Application/Plugins/src/ICE_GetRigidBodyXF.h
+
+1285065707 source:/opensource/nest_workgroup/Addons/nest_momentum/Application/Plugins/src/ICE_GetRigidBodyXF.cpp
+	<xsi_application.h>
+	<xsi_context.h>
+	<xsi_pluginregistrar.h>
+	<xsi_status.h>
+	<xsi_icenodecontext.h>
+	<xsi_icenodedef.h>
+	<xsi_command.h>
+	<xsi_factory.h>
+	<xsi_longarray.h>
+	<xsi_doublearray.h>
+	<xsi_math.h>
+	<xsi_vector2f.h>
+	<xsi_vector3f.h>
+	<xsi_vector4f.h>
+	<xsi_matrix3f.h>
+	<xsi_matrix4f.h>
+	<xsi_rotationf.h>
+	<xsi_quaternionf.h>
+	<xsi_color4f.h>
+	<xsi_shape.h>
+	<xsi_icegeometry.h>
+	<xsi_iceportstate.h>
+	<xsi_indexset.h>
+	<xsi_dataarray.h>
+	<xsi_dataarray2D.h>
+	"Momentum.h"
+	"bulletSimulation.h"
+	"ICE_GetRigidBodyXF.h"
+
+1284557243 /opensource/include/Softimage_2010_SP1/include/xsi_dictionary.h
+	<xsi_siobject.h>
+
+1285065640 /opensource/nest_workgroup/Addons/nest_momentum/Application/Plugins/src/ICE_ApplyImpulse.h
+
+1285065699 source:/opensource/nest_workgroup/Addons/nest_momentum/Application/Plugins/src/ICE_ApplyImpulse.cpp
+	<xsi_application.h>
+	<xsi_context.h>
+	<xsi_pluginregistrar.h>
+	<xsi_status.h>
+	<xsi_icenodecontext.h>
+	<xsi_icenodedef.h>
+	<xsi_command.h>
+	<xsi_factory.h>
+	<xsi_longarray.h>
+	<xsi_doublearray.h>
+	<xsi_math.h>
+	<xsi_vector2f.h>
+	<xsi_vector3f.h>
+	<xsi_vector4f.h>
+	<xsi_matrix3f.h>
+	<xsi_matrix4f.h>
+	<xsi_rotationf.h>
+	<xsi_quaternionf.h>
+	<xsi_color4f.h>
+	<xsi_shape.h>
+	<xsi_icegeometry.h>
+	<xsi_iceportstate.h>
+	<xsi_indexset.h>
+	<xsi_dataarray.h>
+	<xsi_dataarray2D.h>
+	"Momentum.h"
+	"bulletSimulation.h"
+	"ICE_ApplyImpulse.h"
+
+1285065645 /opensource/nest_workgroup/Addons/nest_momentum/Application/Plugins/src/ICE_GetAttributes.h
+
+1285065702 source:/opensource/nest_workgroup/Addons/nest_momentum/Application/Plugins/src/ICE_GetAttributes.cpp
+	<xsi_application.h>
+	<xsi_context.h>
+	<xsi_pluginregistrar.h>
+	<xsi_status.h>
+	<xsi_icenodecontext.h>
+	<xsi_icenodedef.h>
+	<xsi_command.h>
+	<xsi_factory.h>
+	<xsi_longarray.h>
+	<xsi_doublearray.h>
+	<xsi_math.h>
+	<xsi_vector2f.h>
+	<xsi_vector3f.h>
+	<xsi_vector4f.h>
+	<xsi_matrix3f.h>
+	<xsi_matrix4f.h>
+	<xsi_rotationf.h>
+	<xsi_quaternionf.h>
+	<xsi_color4f.h>
+	<xsi_shape.h>
+	<xsi_icegeometry.h>
+	<xsi_iceportstate.h>
+	<xsi_indexset.h>
+	<xsi_dataarray.h>
+	<xsi_dataarray2D.h>
+	"Momentum.h"
+	"bulletSimulation.h"
+	"ICE_GetAttributes.h"
+
+1285065653 /opensource/nest_workgroup/Addons/nest_momentum/Application/Plugins/src/ICE_SetAttributes.h
+
+1285065710 source:/opensource/nest_workgroup/Addons/nest_momentum/Application/Plugins/src/ICE_SetAttributes.cpp
+	<xsi_application.h>
+	<xsi_context.h>
+	<xsi_pluginregistrar.h>
+	<xsi_status.h>
+	<xsi_icenodecontext.h>
+	<xsi_icenodedef.h>
+	<xsi_command.h>
+	<xsi_factory.h>
+	<xsi_longarray.h>
+	<xsi_doublearray.h>
+	<xsi_math.h>
+	<xsi_vector2f.h>
+	<xsi_vector3f.h>
+	<xsi_vector4f.h>
+	<xsi_matrix3f.h>
+	<xsi_matrix4f.h>
+	<xsi_rotationf.h>
+	<xsi_quaternionf.h>
+	<xsi_color4f.h>
+	<xsi_shape.h>
+	<xsi_icegeometry.h>
+	<xsi_iceportstate.h>
+	<xsi_indexset.h>
+	<xsi_dataarray.h>
+	<xsi_dataarray2D.h>
+	"Momentum.h"
+	"bulletSimulation.h"
+	"ICE_SetAttributes.h"
+
+1285065637 /opensource/nest_workgroup/Addons/nest_momentum/Application/Plugins/src/ICE_AddToCluster.h
+
+1285069255 source:/opensource/nest_workgroup/Addons/nest_momentum/Application/Plugins/src/ICE_AddToCluster.cpp
+	<xsi_application.h>
+	<xsi_context.h>
+	<xsi_pluginregistrar.h>
+	<xsi_status.h>
+	<xsi_icenodecontext.h>
+	<xsi_icenodedef.h>
+	<xsi_command.h>
+	<xsi_factory.h>
+	<xsi_longarray.h>
+	<xsi_doublearray.h>
+	<xsi_math.h>
+	<xsi_vector2f.h>
+	<xsi_vector3f.h>
+	<xsi_vector4f.h>
+	<xsi_matrix3f.h>
+	<xsi_matrix4f.h>
+	<xsi_rotationf.h>
+	<xsi_quaternionf.h>
+	<xsi_color4f.h>
+	<xsi_shape.h>
+	<xsi_icegeometry.h>
+	<xsi_iceportstate.h>
+	<xsi_indexset.h>
+	<xsi_dataarray.h>
+	<xsi_dataarray2D.h>
+	"Momentum.h"
+	"bulletSimulation.h"
+	"ICE_AddToCluster.h"
+
+1285067891 source:/opensource/nest_workgroup/Addons/nest_momentum/Application/Plugins/src/ICE_RemoveFromCluster.cpp
+	<xsi_application.h>
+	<xsi_context.h>
+	<xsi_pluginregistrar.h>
+	<xsi_status.h>
+	<xsi_icenodecontext.h>
+	<xsi_icenodedef.h>
+	<xsi_command.h>
+	<xsi_factory.h>
+	<xsi_longarray.h>
+	<xsi_doublearray.h>
+	<xsi_math.h>
+	<xsi_vector2f.h>
+	<xsi_vector3f.h>
+	<xsi_vector4f.h>
+	<xsi_matrix3f.h>
+	<xsi_matrix4f.h>
+	<xsi_rotationf.h>
+	<xsi_quaternionf.h>
+	<xsi_color4f.h>
+	<xsi_shape.h>
+	<xsi_icegeometry.h>
+	<xsi_iceportstate.h>
+	<xsi_indexset.h>
+	<xsi_dataarray.h>
+	<xsi_dataarray2D.h>
+	"Momentum.h"
+	"bulletSimulation.h"
+	"ICE_RemoveFromCluster.h"
+
+1285065652 /opensource/nest_workgroup/Addons/nest_momentum/Application/Plugins/src/ICE_RemoveFromCluster.h
+
+1285065705 source:/opensource/nest_workgroup/Addons/nest_momentum/Application/Plugins/src/ICE_GetNbBodies.cpp
+	<xsi_application.h>
+	<xsi_context.h>
+	<xsi_pluginregistrar.h>
+	<xsi_status.h>
+	<xsi_icenodecontext.h>
+	<xsi_icenodedef.h>
+	<xsi_command.h>
+	<xsi_factory.h>
+	<xsi_longarray.h>
+	<xsi_doublearray.h>
+	<xsi_math.h>
+	<xsi_vector2f.h>
+	<xsi_vector3f.h>
+	<xsi_vector4f.h>
+	<xsi_matrix3f.h>
+	<xsi_matrix4f.h>
+	<xsi_rotationf.h>
+	<xsi_quaternionf.h>
+	<xsi_color4f.h>
+	<xsi_shape.h>
+	<xsi_icegeometry.h>
+	<xsi_iceportstate.h>
+	<xsi_indexset.h>
+	<xsi_dataarray.h>
+	<xsi_dataarray2D.h>
+	"Momentum.h"
+	"bulletSimulation.h"
+	"ICE_GetNbBodies.h"
+
+1285065648 /opensource/nest_workgroup/Addons/nest_momentum/Application/Plugins/src/ICE_GetNbBodies.h
+
+1285065716 source:/opensource/nest_workgroup/Addons/nest_momentum/Application/Plugins/src/Plotting.cpp
+	<xsi_application.h>
+	<xsi_context.h>
+	<xsi_status.h>
+	<xsi_customoperator.h>
+	<xsi_selection.h>
+	<xsi_command.h>
+	<xsi_factory.h>
+	<xsi_primitive.h>
+	<xsi_kinematics.h>
+	<xsi_outputport.h>
+	<xsi_polygonmesh.h>
+	<xsi_x3dobject.h>
+	<xsi_math.h>
+	<xsi_uitoolkit.h>
+	<xsi_progressbar.h>
+	<xsi_boolarray.h>
+	<xsi_inputport.h>
+	<vector>
+	"bulletSimulation.h"
+	"Plotting.h"
+
+1285065658 /opensource/nest_workgroup/Addons/nest_momentum/Application/Plugins/src/Plotting.h
+	<btBulletDynamicsCommon.h>
+	<xsi_userdatablob.h>
+
+1284557243 /opensource/include/Softimage_2010_SP1/include/xsi_userdatablob.h
+	<xsi_property.h>
+	<xsi_value.h>
+	<xsi_status.h>
+
+1284557243 /opensource/include/Softimage_2010_SP1/include/xsi_boolarray.h
+	"sicppsdk.h"
+
+1284557243 /opensource/include/Softimage_2010_SP1/include/xsi_inputport.h
+	<xsi_port.h>
+

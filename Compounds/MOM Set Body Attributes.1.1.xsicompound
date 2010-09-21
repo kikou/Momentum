@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<xsi_file type="CompoundNode" name="MOM Set Body Attributes" category="" tasks="Momentum/Simulation" author="" url="" formatversion="1.4" compoundversion="1.1" versiontag="">
+	<description><![CDATA[]]></description>
+	<definition>
+		<nodes>
+			<node type="GetDataNode" index="0">
+				<param name="reference" type="31" value="self.ID"></param>
+				<param_ext name="reference" type="31" value="self.ID"></param_ext>
+				<portdef name="source" type="2048" structure="1" group="1" instance="0" port="0"></portdef>
+				<portdef name="inname" type="8192" structure="1" group="3" instance="0" port="0"></portdef>
+				<datablob category="ui_infos">
+					<prop name="posx">-301</prop>
+					<prop name="posy">448</prop>
+					<prop name="state">Normal</prop>
+				</datablob>
+			</node>
+			<node type="GetDataNode" index="1">
+				<param name="reference" type="31" value="self.MomentumBasis"></param>
+				<param_ext name="reference" type="31" value="self.MomentumBasis"></param_ext>
+				<portdef name="source" type="2048" structure="1" group="1" instance="0" port="0"></portdef>
+				<portdef name="inname" type="8192" structure="1" group="3" instance="0" port="0"></portdef>
+				<datablob category="ui_infos">
+					<prop name="posx">-386</prop>
+					<prop name="posy">342</prop>
+					<prop name="state">Normal</prop>
+				</datablob>
+			</node>
+			<node type="MOM_SetAttributes" index="2">
+				<param name="base" type="3" value="0"></param>
+				<param name="id" type="3" value="0"></param>
+				<param name="set_position" type="11" value="false"></param>
+				<param name="position.position_x" type="4" value="0.000000"></param>
+				<param name="position.position_y" type="4" value="0.000000"></param>
+				<param name="position.position_z" type="4" value="0.000000"></param>
+				<param name="set_orientation" type="11" value="false"></param>
+				<param name="orientation.orientation_x" type="4" value="0.000000"></param>
+				<param name="orientation.orientation_y" type="4" value="0.000000"></param>
+				<param name="orientation.orientation_z" type="4" value="0.000000"></param>
+				<param name="set_linvelocity" type="11" value="false"></param>
+				<param name="linvelocity.linvelocity_x" type="4" value="0.000000"></param>
+				<param name="linvelocity.linvelocity_y" type="4" value="1.000000"></param>
+				<param name="linvelocity.linvelocity_z" type="4" value="0.000000"></param>
+				<param name="set_angvelocity" type="11" value="false"></param>
+				<param name="angvelocity.angvelocity_x" type="4" value="0.000000"></param>
+				<param name="angvelocity.angvelocity_y" type="4" value="0.000000"></param>
+				<param name="angvelocity.angvelocity_z" type="4" value="0.000000"></param>
+				<param name="set_state" type="11" value="false"></param>
+				<param name="state" type="3" value="0"></param>
+				<param name="set_mass" type="11" value="false"></param>
+				<param name="mass" type="4" value="1.000000"></param>
+				<param name="set_bounce" type="11" value="false"></param>
+				<param name="bounce" type="4" value="0.000000"></param>
+				<param name="set_friction" type="11" value="false"></param>
+				<param name="friction" type="4" value="0.900000"></param>
+				<param name="set_lindamping" type="11" value="false"></param>
+				<param name="lindamping" type="4" value="0.300000"></param>
+				<param name="set_angdamping" type="11" value="false"></param>
+				<param name="angdamping" type="4" value="0.300000"></param>
+				<param name="set_lintreshold" type="11" value="false"></param>
+				<param name="lintreshold" type="4" value="0.800000"></param>
+				<param name="set_angtreshold" type="11" value="false"></param>
+				<param name="angtreshold" type="4" value="1.000000"></param>
+				<portdef name="base" type="2" structure="1" group="0" instance="0" port="0"></portdef>
+				<portdef name="id" type="2" structure="1" group="0" instance="0" port="1"></portdef>
+				<portdef name="set_position" type="1" structure="1" group="0" instance="0" port="2"></portdef>
+				<portdef name="position" type="16" structure="1" group="0" instance="0" port="3"></portdef>
+				<portdef name="set_orientation" type="1" structure="1" group="0" instance="0" port="4"></portdef>
+				<portdef name="orientation" type="16" structure="1" group="0" instance="0" port="5"></portdef>
+				<portdef name="set_linvelocity" type="1" structure="1" group="0" instance="0" port="6"></portdef>
+				<portdef name="linvelocity" type="16" structure="1" group="0" instance="0" port="7"></portdef>
+				<portdef name="set_angvelocity" type="1" structure="1" group="0" instance="0" port="8"></portdef>
+				<portdef name="angvelocity" type="16" structure="1" group="0" instance="0" port="9"></portdef>
+				<portdef name="set_state" type="1" structure="1" group="0" instance="0" port="10"></portdef>
+				<portdef name="state" type="2" structure="1" group="0" instance="0" port="11"></portdef>
+				<portdef name="set_mass" type="1" structure="1" group="0" instance="0" port="12"></portdef>
+				<portdef name="mass" type="4" structure="1" group="0" instance="0" port="13"></portdef>
+				<portdef name="set_bounce" type="1" structure="1" group="0" instance="0" port="14"></portdef>
+				<portdef name="bounce" type="4" structure="1" group="0" instance="0" port="15"></portdef>
+				<portdef name="set_friction" type="1" structure="1" group="0" instance="0" port="16"></portdef>
+				<portdef name="friction" type="4" structure="1" group="0" instance="0" port="17"></portdef>
+				<portdef name="set_lindamping" type="1" structure="1" group="0" instance="0" port="18"></portdef>
+				<portdef name="lindamping" type="4" structure="1" group="0" instance="0" port="19"></portdef>
+				<portdef name="set_angdamping" type="1" structure="1" group="0" instance="0" port="20"></portdef>
+				<portdef name="angdamping" type="4" structure="1" group="0" instance="0" port="21"></portdef>
+				<portdef name="set_lintreshold" type="1" structure="1" group="0" instance="0" port="22"></portdef>
+				<portdef name="lintreshold" type="4" structure="1" group="0" instance="0" port="23"></portdef>
+				<portdef name="set_angtreshold" type="1" structure="1" group="0" instance="0" port="24"></portdef>
+				<portdef name="angtreshold" type="4" structure="1" group="0" instance="0" port="25"></portdef>
+				<datablob category="ui_infos">
+					<prop name="posx">-43</prop>
+					<prop name="posy">398</prop>
+					<prop name="state">Normal</prop>
+				</datablob>
+			</node>
+			<node type="Set Data" version="1.0" index="3">
+				<param name="Reference" type="31" value=""></param>
+				<param name="Value" type="3" value="0"></param>
+				<param_ext name="Reference" type="31" value=""></param_ext>
+				<portdef name="In_Name" type="8192" structure="1" group="-1" instance="-1" port="-1"></portdef>
+				<portdef name="Value" type="2" structure="1" group="2" instance="0" port="0" groupname="Value"></portdef>
+				<datablob category="ui_infos">
+					<prop name="posx">203</prop>
+					<prop name="posy">396</prop>
+					<prop name="state">Normal</prop>
+				</datablob>
+			</node>
+		</nodes>
+		<exposed_ports>
+			<port index="2" portname="set_position" username="set_position" basename="set_position" portlabel="set_position" exposetype="single"> </port>
+			<port index="2" portname="position" username="position" basename="position" portlabel="position" exposetype="single"> </port>
+			<port index="2" portname="set_orientation" username="set_orientation" basename="set_orientation" portlabel="set_orientation" exposetype="single"> </port>
+			<port index="2" portname="orientation" username="orientation" basename="orientation" portlabel="orientation" exposetype="single"> </port>
+			<port index="2" portname="set_linvelocity" username="set_linvelocity" basename="set_linvelocity" portlabel="set_linvelocity" exposetype="single"> </port>
+			<port index="2" portname="linvelocity" username="linvelocity" basename="linvelocity" portlabel="linvelocity" exposetype="single"> </port>
+			<port index="2" portname="set_angvelocity" username="set_angvelocity" basename="set_angvelocity" portlabel="set_angvelocity" exposetype="single"> </port>
+			<port index="2" portname="angvelocity" username="angvelocity" basename="angvelocity" portlabel="angvelocity" exposetype="single"> </port>
+			<port index="2" portname="set_state" username="set_state" basename="set_state" portlabel="set_state" exposetype="single"> </port>
+			<port index="2" portname="state" username="state" basename="state" portlabel="state" exposetype="single"> </port>
+			<port index="2" portname="set_mass" username="set_mass" basename="set_mass" portlabel="set_mass" exposetype="single"> </port>
+			<port index="2" portname="mass" username="mass" basename="mass" portlabel="mass" exposetype="single"> </port>
+			<port index="2" portname="set_bounce" username="set_bounce" basename="set_bounce" portlabel="set_bounce" exposetype="single"> </port>
+			<port index="2" portname="bounce" username="bounce" basename="bounce" portlabel="bounce" exposetype="single"> </port>
+			<port index="2" portname="set_friction" username="set_friction" basename="set_friction" portlabel="set_friction" exposetype="single"> </port>
+			<port index="2" portname="friction" username="friction" basename="friction" portlabel="friction" exposetype="single"> </port>
+			<port index="2" portname="set_lindamping" username="set_lindamping" basename="set_lindamping" portlabel="set_lindamping" exposetype="single"> </port>
+			<port index="2" portname="lindamping" username="lindamping" basename="lindamping" portlabel="lindamping" exposetype="single"> </port>
+			<port index="2" portname="set_angdamping" username="set_angdamping" basename="set_angdamping" portlabel="set_angdamping" exposetype="single"> </port>
+			<port index="2" portname="angdamping" username="angdamping" basename="angdamping" portlabel="angdamping" exposetype="single"> </port>
+			<port index="2" portname="set_lintreshold" username="set_lintreshold" basename="set_lintreshold" portlabel="set_lintreshold" exposetype="single"> </port>
+			<port index="2" portname="lintreshold" username="lintreshold" basename="lintreshold" portlabel="lintreshold" exposetype="single"> </port>
+			<port index="2" portname="set_angtreshold" username="set_angtreshold" basename="set_angtreshold" portlabel="set_angtreshold" exposetype="single"> </port>
+			<port index="2" portname="angtreshold" username="angtreshold" basename="angtreshold" portlabel="angtreshold" exposetype="single"> </port>
+			<port index="3" portname="Execute" username="Execute" basename="Execute" portlabel="Execute" exposetype="single"> </port>
+		</exposed_ports>
+		<connections>
+			<cnx from_node="2" from_port="outbase" to_node="3" to_port="Value"> </cnx>
+			<cnx from_node="0" from_port="value" to_node="2" to_port="id"> </cnx>
+			<cnx from_node="1" from_port="value" to_node="2" to_port="base"> </cnx>
+			<cnx from_node="1" from_port="outname" to_node="3" to_port="In_Name"> </cnx>
+		</connections>
+		<layout>
+			<item type="input" name="set_position"> </item>
+			<item type="input" name="position"> </item>
+			<item type="input" name="set_orientation"> </item>
+			<item type="input" name="orientation"> </item>
+			<item type="input" name="set_linvelocity"> </item>
+			<item type="input" name="linvelocity"> </item>
+			<item type="input" name="set_angvelocity"> </item>
+			<item type="input" name="angvelocity"> </item>
+			<item type="input" name="set_state"> </item>
+			<item type="input" name="state"> </item>
+			<item type="input" name="set_mass"> </item>
+			<item type="input" name="mass"> </item>
+			<item type="input" name="set_bounce"> </item>
+			<item type="input" name="bounce"> </item>
+			<item type="input" name="set_friction"> </item>
+			<item type="input" name="friction"> </item>
+			<item type="input" name="set_lindamping"> </item>
+			<item type="input" name="lindamping"> </item>
+			<item type="input" name="set_angdamping"> </item>
+			<item type="input" name="angdamping"> </item>
+			<item type="input" name="set_lintreshold"> </item>
+			<item type="input" name="lintreshold"> </item>
+			<item type="input" name="set_angtreshold"> </item>
+			<item type="input" name="angtreshold"> </item>
+			<item type="output" name="Execute"> </item>
+		</layout>
+		<blob_dictionary>
+		</blob_dictionary>
+	</definition>
+</xsi_file>

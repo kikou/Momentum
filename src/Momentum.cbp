@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="Momentum" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="debug">
+				<Option output="../libMomentum" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="../../../../../../build/tmp/debug" />
+				<Option object_output="../../../../../../build/obj/debug" />
+				<Option type="3" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+					<Add option="-DGIMLETDEBUG" />
+				</Compiler>
+				<Linker>
+					<Add directory="./../../../build/bin/debug" />
+				</Linker>
+			</Target>
+			<Target title="opt">
+				<Option output="../libMomentum" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="../../../../../../build/tmp/opt" />
+				<Option object_output="../../../../../../build/obj/opt" />
+				<Option type="3" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+					<Add directory="./../../../build/bin/opt" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+			<Add option="-fPIC" />
+			<Add directory="../../../../../../include" />
+			<Add directory="../../../../../../lib" />
+			<Add directory="../../../../../../include/bullet-2.76/src" />
+			<Add directory="../../../../../../include/Softimage_2010_SP1/include" />
+		</Compiler>
+		<Linker>
+			<Add library="sicppsdk" />
+			<Add library="sicoresdk" />
+			<Add library="snEssence" />
+			<Add library="BulletCollision" />
+			<Add library="BulletDynamics" />
+			<Add library="BulletSoftBody" />
+			<Add library="LinearMath" />
+			<Add directory="../../../../../lib" />
+			<Add directory="../../../../../../include/Softimage_2010_SP1/lib" />
+		</Linker>
+		<Unit filename="Deform.cpp" />
+		<Unit filename="ICE_AddToCluster.cpp" />
+		<Unit filename="ICE_AddToCluster.h" />
+		<Unit filename="ICE_ApplyImpulse.cpp" />
+		<Unit filename="ICE_ApplyImpulse.h" />
+		<Unit filename="ICE_CreateRigidBodies.cpp" />
+		<Unit filename="ICE_CreateRigidBodies.h" />
+		<Unit filename="ICE_GetAllVelocities.cpp" />
+		<Unit filename="ICE_GetAllVelocities.h" />
+		<Unit filename="ICE_GetAttributes.cpp" />
+		<Unit filename="ICE_GetAttributes.h" />
+		<Unit filename="ICE_GetContactPoints.cpp" />
+		<Unit filename="ICE_GetContactPoints.h" />
+		<Unit filename="ICE_GetNbBodies.cpp" />
+		<Unit filename="ICE_GetNbBodies.h" />
+		<Unit filename="ICE_GetRigidBodyXF.cpp" />
+		<Unit filename="ICE_GetRigidBodyXF.h" />
+		<Unit filename="ICE_RemoveFromCluster.cpp" />
+		<Unit filename="ICE_RemoveFromCluster.h" />
+		<Unit filename="ICE_SetAttributes.cpp" />
+		<Unit filename="ICE_SetAttributes.h" />
+		<Unit filename="Kinematics.cpp" />
+		<Unit filename="Modifier.cpp" />
+		<Unit filename="Momentum.cpp" />
+		<Unit filename="Momentum.h" />
+		<Unit filename="Plotting.cpp" />
+		<Unit filename="Plotting.h" />
+		<Unit filename="Settings.cpp" />
+		<Unit filename="Surface.cpp" />
+		<Unit filename="bulletSimulation.cpp" />
+		<Unit filename="bulletSimulation.h" />
+		<Unit filename="consBallSocket.cpp" />
+		<Unit filename="consHinge.cpp" />
+		<Unit filename="consSlider.cpp" />
+		<Unit filename="consSpring.cpp" />
+		<Extensions>
+			<code_completion />
+			<debugger />
+			<envvars />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>

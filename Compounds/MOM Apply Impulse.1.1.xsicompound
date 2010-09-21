@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<xsi_file type="CompoundNode" name="MOM Apply Impulse" category="" tasks="Momentum/Simulation" author="" url="" formatversion="1.4" compoundversion="1.1" versiontag="">
+	<description><![CDATA[]]></description>
+	<definition>
+		<nodes>
+			<node type="Set Data" version="1.0" index="0">
+				<param name="Reference" type="31" value="self.MomentumBasis"></param>
+				<param name="Value" type="3" value="0"></param>
+				<param_ext name="Reference" type="31" value="self.MomentumBasis"></param_ext>
+				<portdef name="Value" type="2" structure="1" group="2" instance="0" port="0" groupname="Value"></portdef>
+				<portdef name="In_Name" type="8192" structure="1" group="-1" instance="-1" port="-1"></portdef>
+				<datablob category="ui_infos">
+					<prop name="posx">204</prop>
+					<prop name="posy">54</prop>
+					<prop name="state">Normal</prop>
+				</datablob>
+			</node>
+			<node type="GetDataNode" index="1">
+				<param name="reference" type="31" value="self.MomentumBasis"></param>
+				<param_ext name="reference" type="31" value="self.MomentumBasis"></param_ext>
+				<portdef name="source" type="2048" structure="1" group="1" instance="0" port="0"></portdef>
+				<portdef name="inname" type="8192" structure="1" group="3" instance="0" port="0"></portdef>
+				<datablob category="ui_infos">
+					<prop name="posx">-366</prop>
+					<prop name="posy">-32</prop>
+					<prop name="state">Normal</prop>
+				</datablob>
+			</node>
+			<node type="GetDataNode" index="2">
+				<param name="reference" type="31" value="self.ID"></param>
+				<param_ext name="reference" type="31" value="self.ID"></param_ext>
+				<portdef name="source" type="2048" structure="1" group="1" instance="0" port="0"></portdef>
+				<portdef name="inname" type="8192" structure="1" group="3" instance="0" port="0"></portdef>
+				<datablob category="ui_infos">
+					<prop name="posx">-293</prop>
+					<prop name="posy">138</prop>
+					<prop name="state">Normal</prop>
+				</datablob>
+			</node>
+			<node type="MOM_ApplyImpulse" index="3">
+				<param name="base" type="3" value="0"></param>
+				<param name="id" type="3" value="0"></param>
+				<param name="mode" type="3" value="0"></param>
+				<param name="origin.origin_x" type="4" value="0.000000"></param>
+				<param name="origin.origin_y" type="4" value="0.000000"></param>
+				<param name="origin.origin_z" type="4" value="0.000000"></param>
+				<param name="impulse.impulse_x" type="4" value="0.000000"></param>
+				<param name="impulse.impulse_y" type="4" value="0.000000"></param>
+				<param name="impulse.impulse_z" type="4" value="1.000000"></param>
+				<portdef name="base" type="2" structure="1" group="0" instance="0" port="0"></portdef>
+				<portdef name="id" type="2" structure="1" group="0" instance="0" port="1"></portdef>
+				<portdef name="mode" type="2" structure="1" group="0" instance="0" port="2"></portdef>
+				<portdef name="origin" type="16" structure="1" group="0" instance="0" port="3"></portdef>
+				<portdef name="impulse" type="16" structure="1" group="0" instance="0" port="4"></portdef>
+				<datablob category="ui_infos">
+					<prop name="posx">-71</prop>
+					<prop name="posy">61</prop>
+					<prop name="state">Normal</prop>
+				</datablob>
+			</node>
+		</nodes>
+		<exposed_ports>
+			<port index="0" portname="Execute" username="Execute" basename="Execute" portlabel="Execute" exposetype="single"> </port>
+			<port index="3" portname="mode" username="Mode" basename="Mode" portlabel="Mode" exposetype="single"> </port>
+			<port index="3" portname="origin" username="Origin" basename="Origin" portlabel="Origin" exposetype="single"> </port>
+			<port index="3" portname="impulse" username="Impulse" basename="Impulse" portlabel="Impulse" exposetype="single"> </port>
+		</exposed_ports>
+		<connections>
+			<cnx from_node="1" from_port="value" to_node="3" to_port="base"> </cnx>
+			<cnx from_node="2" from_port="value" to_node="3" to_port="id"> </cnx>
+			<cnx from_node="3" from_port="outbase" to_node="0" to_port="Value"> </cnx>
+		</connections>
+		<layout>
+			<item type="input" name="Mode" min="0" max="0">
+				<enum value="0"><![CDATA[Center Push]]></enum>
+				<enum value="1"><![CDATA[Corner Torque]]></enum>
+			</item>
+			<item type="input" name="Origin"> </item>
+			<item type="input" name="Impulse"> </item>
+			<item type="output" name="Execute"> </item>
+		</layout>
+		<blob_dictionary>
+		</blob_dictionary>
+	</definition>
+</xsi_file>

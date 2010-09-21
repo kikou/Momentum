@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<xsi_file type="CompoundNode" name="MOM Get Body Attributes" tasks="Momentum/Simulation" formatversion="1.4" compoundversion="1.1" constructionmode="Current" backgroundcolor="6732954">
+	<definition>
+		<nodes>
+			<node type="GetDataNode" index="0">
+				<param name="reference" type="31" value="self.PointPosition"></param>
+				<param_ext name="reference" type="31" value="self.PointPosition"></param_ext>
+				<portdef name="source" type="2048" structure="1" group="1" instance="0" port="0"></portdef>
+				<portdef name="inname" type="8192" structure="1" group="3" instance="0" port="0"></portdef>
+				<datablob category="ui_infos">
+					<prop name="posx">-1014</prop>
+					<prop name="posy">719</prop>
+					<prop name="state">Normal</prop>
+				</datablob>
+			</node>
+			<node type="GetDataNode" index="1">
+				<param name="reference" type="31" value="self.MomentumBasis"></param>
+				<param_ext name="reference" type="31" value="self.MomentumBasis"></param_ext>
+				<portdef name="source" type="2048" structure="1" group="1" instance="0" port="0"></portdef>
+				<portdef name="inname" type="8192" structure="1" group="3" instance="0" port="0"></portdef>
+				<datablob category="ui_infos">
+					<prop name="posx">-829</prop>
+					<prop name="posy">480</prop>
+					<prop name="state">Normal</prop>
+				</datablob>
+			</node>
+			<node type="MOM_GetAttributes" index="2">
+				<param name="base" type="3" value="0"></param>
+				<param name="id" type="3" value="0"></param>
+				<portdef name="base" type="2" structure="1" group="0" instance="0" port="0"></portdef>
+				<portdef name="id" type="2" structure="1" group="0" instance="0" port="1"></portdef>
+				<datablob category="ui_infos">
+					<prop name="posx">-229</prop>
+					<prop name="posy">458</prop>
+					<prop name="state">Normal</prop>
+				</datablob>
+			</node>
+			<node type="GetElementIndicesNode" index="3">
+				<param name="value.value_x" type="4" value="0.000000"></param>
+				<param name="value.value_y" type="4" value="0.000000"></param>
+				<param name="value.value_z" type="4" value="0.000000"></param>
+				<portdef name="value" type="16" structure="1" group="0" instance="0" port="0"></portdef>
+				<datablob category="ui_infos">
+					<prop name="posx">-801</prop>
+					<prop name="posy">740</prop>
+					<prop name="state">Normal</prop>
+				</datablob>
+			</node>
+			<node type="GetDataNode" index="4">
+				<param name="reference" type="31" value="self.ID"></param>
+				<param_ext name="reference" type="31" value="self.ID"></param_ext>
+				<portdef name="source" type="2048" structure="1" group="1" instance="0" port="0"></portdef>
+				<portdef name="inname" type="8192" structure="1" group="3" instance="0" port="0"></portdef>
+				<datablob category="ui_infos">
+					<prop name="posx">-751</prop>
+					<prop name="posy">612</prop>
+					<prop name="state">Normal</prop>
+				</datablob>
+			</node>
+			<node type="FilterNode" index="5">
+				<param name="keep" type="11" value="true"></param>
+				<param name="value" type="3" value="0"></param>
+				<portdef name="keep" type="1" structure="1" group="0" instance="0" port="0"></portdef>
+				<portdef name="value" type="2" structure="1" group="0" instance="0" port="1"></portdef>
+				<datablob category="ui_infos">
+					<prop name="posx">-508</prop>
+					<prop name="posy">440</prop>
+					<prop name="state">Normal</prop>
+				</datablob>
+			</node>
+			<node type="PassThroughNode" index="6">
+				<param name="in" type="11" value="true"></param>
+				<portdef name="in" type="1" structure="1" group="0" instance="0" port="0"></portdef>
+				<datablob category="ui_infos">
+					<prop name="posx">-852</prop>
+					<prop name="posy">389</prop>
+					<prop name="state">Normal</prop>
+				</datablob>
+			</node>
+			<node type="FirstValidNode" index="7">
+				<param name="in1" type="3" value="0"></param>
+				<param name="in2" type="3" value="0"></param>
+				<portdef name="in1" type="2" structure="1" group="0" instance="0" port="0"></portdef>
+				<portdef name="in2" type="2" structure="1" group="0" instance="1" port="0"></portdef>
+				<datablob category="ui_infos">
+					<prop name="posx">-584</prop>
+					<prop name="posy">667</prop>
+					<prop name="state">Normal</prop>
+				</datablob>
+			</node>
+			<node type="FilterNode" index="8">
+				<param name="keep" type="11" value="true"></param>
+				<param name="value" type="3" value="0"></param>
+				<portdef name="keep" type="1" structure="1" group="0" instance="0" port="0"></portdef>
+				<portdef name="value" type="2" structure="1" group="0" instance="0" port="1"></portdef>
+				<datablob category="ui_infos">
+					<prop name="posx">-441</prop>
+					<prop name="posy">596</prop>
+					<prop name="state">Normal</prop>
+				</datablob>
+			</node>
+		</nodes>
+		<exposed_ports>
+			<port index="2" portname="position" username="position" basename="position" portlabel="position" exposetype="single"> </port>
+			<port index="2" portname="orientation" username="orientation" basename="orientation" portlabel="orientation" exposetype="single"> </port>
+			<port index="2" portname="linvelocity" username="linvelocity" basename="linvelocity" portlabel="linvelocity" exposetype="single"> </port>
+			<port index="2" portname="angvelocity" username="angvelocity" basename="angvelocity" portlabel="angvelocity" exposetype="single"> </port>
+			<port index="2" portname="state" username="state" basename="state" portlabel="state" exposetype="single"> </port>
+			<port index="2" portname="mass" username="mass" basename="mass" portlabel="mass" exposetype="single"> </port>
+			<port index="2" portname="bounce" username="bounce" basename="bounce" portlabel="bounce" exposetype="single"> </port>
+			<port index="2" portname="friction" username="friction" basename="friction" portlabel="friction" exposetype="single"> </port>
+			<port index="2" portname="lindamping" username="lindamping" basename="lindamping" portlabel="lindamping" exposetype="single"> </port>
+			<port index="2" portname="angdamping" username="angdamping" basename="angdamping" portlabel="angdamping" exposetype="single"> </port>
+			<port index="2" portname="lintreshold" username="lintreshold" basename="lintreshold" portlabel="lintreshold" exposetype="single"> </port>
+			<port index="2" portname="angtreshold" username="angtreshold" basename="angtreshold" portlabel="angtreshold" exposetype="single"> </port>
+			<port index="6" portname="in" username="Filter" basename="Filter" portlabel="Filter" exposetype="single"> </port>
+		</exposed_ports>
+		<connections>
+			<cnx from_node="0" from_port="value" to_node="3" to_port="value"> </cnx>
+			<cnx from_node="3" from_port="indices" to_node="7" to_port="in2"> </cnx>
+			<cnx from_node="4" from_port="value" to_node="7" to_port="in1"> </cnx>
+			<cnx from_node="5" from_port="result" to_node="2" to_port="base"> </cnx>
+			<cnx from_node="6" from_port="out" to_node="5" to_port="keep"> </cnx>
+			<cnx from_node="6" from_port="out" to_node="8" to_port="keep"> </cnx>
+			<cnx from_node="1" from_port="value" to_node="5" to_port="value"> </cnx>
+			<cnx from_node="7" from_port="out" to_node="8" to_port="value"> </cnx>
+			<cnx from_node="8" from_port="result" to_node="2" to_port="id"> </cnx>
+		</connections>
+		<layout>
+			<item type="input" name="Filter"> </item>
+			<item type="output" name="position"> </item>
+			<item type="output" name="orientation"> </item>
+			<item type="output" name="linvelocity"> </item>
+			<item type="output" name="angvelocity"> </item>
+			<item type="output" name="state"> </item>
+			<item type="output" name="mass"> </item>
+			<item type="output" name="bounce"> </item>
+			<item type="output" name="friction"> </item>
+			<item type="output" name="lindamping"> </item>
+			<item type="output" name="angdamping"> </item>
+			<item type="output" name="lintreshold"> </item>
+			<item type="output" name="angtreshold"> </item>
+		</layout>
+		<blob_dictionary>
+		</blob_dictionary>
+	</definition>
+</xsi_file>
