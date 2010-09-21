@@ -241,8 +241,6 @@ bool bulletSimulation::SetFrame(int in_Frame)
    {
       while(in_Frame > mLastFrame)
       {
-         //mDynamicsWorld->stepSimulation(1.0f/float(in_Fps),0);
-
          float dt=(1.0f/mFps)/(float)mSubSteps;
          //Step every subframe
          for (int i=0;i<mSubSteps;i++)
@@ -607,14 +605,11 @@ void btRigidBodyReference::AddToCluster(btRigidBodyReference * in_pCluster)
 
    // we need to ensure that the cluster ref is actually a cluster!
    btCompoundShape * compound = NULL;
+   gSimulation->GetDynamicsWorld()->removeRigidBody(in_pCluster->body);
    if(!in_pCluster->isACluster)
    {
-      // this will hopefully prevent the crash...!!
-      gSimulation->GetDynamicsWorld()->removeRigidBody(in_pCluster->body);
-      gSimulation->GetDynamicsWorld()->addRigidBody(in_pCluster->body);
-
       in_pCluster->clusterOffset.setIdentity();
-      compound = new btCompoundShape();
+      compound = new btCompoundShape(false);
       compound->addChildShape(in_pCluster->clusterOffset,in_pCluster->body->getCollisionShape());
       compound->setMargin(0);
       in_pCluster->body->setCollisionShape(compound);
@@ -667,6 +662,7 @@ void btRigidBodyReference::AddToCluster(btRigidBodyReference * in_pCluster)
    cluster->body->updateInertiaTensor();
 
    // remove my rigid body from the world!
+   gSimulation->GetDynamicsWorld()->addRigidBody(in_pCluster->body);
    gSimulation->GetDynamicsWorld()->removeRigidBody(body);
 }
 
@@ -674,7 +670,9 @@ void btRigidBodyReference::RemoveFromCluster()
 {
    // check if I am in a cluster at all
    if(cluster == NULL)
+   {
       return;
+   }
 
    // let calculate my global offset
    btTransform clusterTransform = cluster->GetWorldTransform(false);
@@ -712,22 +710,20 @@ void btRigidBodyReference::RemoveFromCluster()
    clusterTransform.setOrigin(center);
    cluster->SetWorldTransform(clusterTransform,true);
 
-   // if there are no children left!
+   // this will hopefully prevent the crash...!!
+   gSimulation->GetDynamicsWorld()->removeRigidBody(cluster->body);
    if(compound->getNumChildShapes()==1)
    {
-      // this will hopefully prevent the crash...!!
-      gSimulation->GetDynamicsWorld()->removeRigidBody(cluster->body);
-      gSimulation->GetDynamicsWorld()->addRigidBody(cluster->body);
-
+      // if there are no children left!
       clusterTransform = cluster->GetWorldTransform();
       cluster->clusterOffset.setIdentity();
       cluster->isACluster = false;
       cluster->children.clear();
       cluster->body->setCollisionShape(compound->getChildShape(0));
-      compound->removeChildShapeByIndex(0);
       delete compound;
       cluster->SetWorldTransform(clusterTransform,true);
    }
+   gSimulation->GetDynamicsWorld()->addRigidBody(cluster->body);
 
    // now update the mass!
    cluster->mass = cluster->mass - mass;
