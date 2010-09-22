@@ -265,6 +265,34 @@ XSIPLUGINCALLBACK CStatus MomentumDeform_Update( CRef& in_ctxt )
    {
       int mode = (LONG)ctxt.GetParameterValue(L"mode");
 
+      // this is filthy, but we have to do it to ensure that we don't crash with clusters.
+      // it is simply related to a bug in bullet 2.76 that doesn't allow to edit
+      // compound shapes
+      if(p->nbIslands > 0)
+      {
+         // check all rbd's
+         for(int i=0;i<p->nbIslands;i++)
+         {
+            // construct the id
+            rbdID body_id;
+            body_id.primary = p->rbd.primary;
+            body_id.secondary = i;
+
+            // try to find the rbd for this
+            btRigidBodyReference * bodyRef = gSimulation->GetRigidBody(body_id);
+            if(bodyRef == NULL)
+               continue;
+
+            // if we have, check if it is part of a cluster
+            if(bodyRef->cluster != NULL)
+            {
+               // reset the world
+               gSimulation->ResetWorld();
+               break;
+            }
+         }
+      }
+
       // first, let's clear the userdata
       p->Clear();
 
